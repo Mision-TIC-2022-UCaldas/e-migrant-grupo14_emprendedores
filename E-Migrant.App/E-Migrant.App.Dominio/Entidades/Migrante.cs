@@ -1,5 +1,5 @@
 using System;
-namespace E_Migrant.App.Dominio.Entidades
+namespace E_Migrant.App.Dominio
 {
     public class Migrante
     {

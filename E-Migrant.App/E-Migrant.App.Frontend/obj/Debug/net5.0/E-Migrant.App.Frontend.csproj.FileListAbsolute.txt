@@ -149,3 +149,4 @@ C:\Users\Exneider\Documents\Hackatón\e-migrant-grupo14_emprendedores\E-Migrant.
 /Users/mauricioroa/Desktop/e-migrant-grupo14_emprendedores/E-Migrant.App/E-Migrant.App.Frontend/obj/Debug/net5.0/E-Migrant.App.Frontend.pdb
 /Users/mauricioroa/Desktop/e-migrant-grupo14_emprendedores/E-Migrant.App/E-Migrant.App.Frontend/obj/Debug/net5.0/E-Migrant.App.Frontend.genruntimeconfig.cache
 >>>>>>> fa3c4617335f290edff5f720cd089b50a909cf43
+C:\Users\Exneider\Documents\Hackatón\e-migrant-grupo14_emprendedores\E-Migrant.App\E-Migrant.App.Frontend\obj\Debug\net5.0\E-Migrant.App.Frontend.csproj.AssemblyReference.cache

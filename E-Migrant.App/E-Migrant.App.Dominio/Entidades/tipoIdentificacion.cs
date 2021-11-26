@@ -1,4 +1,4 @@
-namespace E_Migrant.App.Dominio.Entidades
+namespace E_Migrant.App.Dominio
 {
     public enum tipoIdentificacion
     {
