@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/mauricioroa/Desktop/e-migrant-grupo14_emprendedores/E-Migrant.App/E-Migrant.App.Frontend/E-Migrant.App.Frontend.csproj",
-      "projectName": "E-Migrant.App.Frontend",
-      "projectPath": "/Users/mauricioroa/Desktop/e-migrant-grupo14_emprendedores/E-Migrant.App/E-Migrant.App.Frontend/E-Migrant.App.Frontend.csproj",
+      "projectUniqueName": "/Users/mauricioroa/Desktop/e-migrant-grupo14_emprendedores/reto0IMC/reto0IMC.csproj",
+      "projectName": "reto0IMC",
+      "projectPath": "/Users/mauricioroa/Desktop/e-migrant-grupo14_emprendedores/reto0IMC/reto0IMC.csproj",
       "packagesPath": "/Users/mauricioroa/.nuget/packages/",
-      "outputPath": "/Users/mauricioroa/Desktop/e-migrant-grupo14_emprendedores/E-Migrant.App/E-Migrant.App.Frontend/obj/",
+      "outputPath": "/Users/mauricioroa/Desktop/e-migrant-grupo14_emprendedores/reto0IMC/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/mauricioroa/.nuget/NuGet/NuGet.Config"
@@ -54,9 +54,6 @@
         "assetTargetFallback": true,
         "warn": true,
         "frameworkReferences": {
-          "Microsoft.AspNetCore.App": {
-            "privateAssets": "none"
-          },
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }

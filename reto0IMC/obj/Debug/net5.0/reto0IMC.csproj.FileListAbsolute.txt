@@ -1,0 +1,15 @@
+/Users/mauricioroa/Desktop/e-migrant-grupo14_emprendedores/reto0IMC/bin/Debug/net5.0/reto0IMC.deps.json
+/Users/mauricioroa/Desktop/e-migrant-grupo14_emprendedores/reto0IMC/bin/Debug/net5.0/reto0IMC.runtimeconfig.json
+/Users/mauricioroa/Desktop/e-migrant-grupo14_emprendedores/reto0IMC/bin/Debug/net5.0/reto0IMC.runtimeconfig.dev.json
+/Users/mauricioroa/Desktop/e-migrant-grupo14_emprendedores/reto0IMC/bin/Debug/net5.0/reto0IMC.dll
+/Users/mauricioroa/Desktop/e-migrant-grupo14_emprendedores/reto0IMC/bin/Debug/net5.0/ref/reto0IMC.dll
+/Users/mauricioroa/Desktop/e-migrant-grupo14_emprendedores/reto0IMC/bin/Debug/net5.0/reto0IMC.pdb
+/Users/mauricioroa/Desktop/e-migrant-grupo14_emprendedores/reto0IMC/obj/Debug/net5.0/reto0IMC.csproj.AssemblyReference.cache
+/Users/mauricioroa/Desktop/e-migrant-grupo14_emprendedores/reto0IMC/obj/Debug/net5.0/reto0IMC.GeneratedMSBuildEditorConfig.editorconfig
+/Users/mauricioroa/Desktop/e-migrant-grupo14_emprendedores/reto0IMC/obj/Debug/net5.0/reto0IMC.AssemblyInfoInputs.cache
+/Users/mauricioroa/Desktop/e-migrant-grupo14_emprendedores/reto0IMC/obj/Debug/net5.0/reto0IMC.AssemblyInfo.cs
+/Users/mauricioroa/Desktop/e-migrant-grupo14_emprendedores/reto0IMC/obj/Debug/net5.0/reto0IMC.csproj.CoreCompileInputs.cache
+/Users/mauricioroa/Desktop/e-migrant-grupo14_emprendedores/reto0IMC/obj/Debug/net5.0/reto0IMC.dll
+/Users/mauricioroa/Desktop/e-migrant-grupo14_emprendedores/reto0IMC/obj/Debug/net5.0/ref/reto0IMC.dll
+/Users/mauricioroa/Desktop/e-migrant-grupo14_emprendedores/reto0IMC/obj/Debug/net5.0/reto0IMC.pdb
+/Users/mauricioroa/Desktop/e-migrant-grupo14_emprendedores/reto0IMC/obj/Debug/net5.0/reto0IMC.genruntimeconfig.cache
