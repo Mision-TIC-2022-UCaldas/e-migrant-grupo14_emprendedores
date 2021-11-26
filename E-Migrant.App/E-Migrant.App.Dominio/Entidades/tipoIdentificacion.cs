@@ -4,6 +4,7 @@ namespace E_Migrant.App.Dominio.Entidades
     {
         targetaIdentidad,
         cedulaExtrangeria,
+        pasaporte,
         otro
     }
 }
