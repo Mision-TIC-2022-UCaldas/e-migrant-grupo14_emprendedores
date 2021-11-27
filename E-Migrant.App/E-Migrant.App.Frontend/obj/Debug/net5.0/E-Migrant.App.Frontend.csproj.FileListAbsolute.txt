@@ -166,3 +166,10 @@
 /Users/mauricioroa/Desktop/e-migrant-grupo14_emprendedores/E-Migrant.App/E-Migrant.App.Frontend/obj/Debug/net5.0/Razor/Areas/Identity/Pages/_ViewImports.cshtml.g.cs
 /Users/mauricioroa/Desktop/e-migrant-grupo14_emprendedores/E-Migrant.App/E-Migrant.App.Frontend/obj/Debug/net5.0/Razor/Areas/Identity/Pages/_ViewStart.cshtml.g.cs
 /Users/mauricioroa/Desktop/e-migrant-grupo14_emprendedores/E-Migrant.App/E-Migrant.App.Frontend/obj/Debug/net5.0/Razor/Pages/Shared/_LoginPartial.cshtml.g.cs
+/Users/mauricioroa/Desktop/e-migrant-grupo14_emprendedores/E-Migrant.App/E-Migrant.App.Frontend/bin/Debug/net5.0/Microsoft.AspNetCore.Authorization.dll
+/Users/mauricioroa/Desktop/e-migrant-grupo14_emprendedores/E-Migrant.App/E-Migrant.App.Frontend/bin/Debug/net5.0/Microsoft.AspNetCore.Metadata.dll
+/Users/mauricioroa/Desktop/e-migrant-grupo14_emprendedores/E-Migrant.App/E-Migrant.App.Frontend/bin/Debug/net5.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll
+/Users/mauricioroa/Desktop/e-migrant-grupo14_emprendedores/E-Migrant.App/E-Migrant.App.Frontend/bin/Debug/net5.0/Microsoft.Extensions.Logging.Abstractions.dll
+/Users/mauricioroa/Desktop/e-migrant-grupo14_emprendedores/E-Migrant.App/E-Migrant.App.Frontend/bin/Debug/net5.0/Microsoft.Extensions.Options.dll
+/Users/mauricioroa/Desktop/e-migrant-grupo14_emprendedores/E-Migrant.App/E-Migrant.App.Frontend/bin/Debug/net5.0/Microsoft.Extensions.Primitives.dll
+/Users/mauricioroa/Desktop/e-migrant-grupo14_emprendedores/E-Migrant.App/E-Migrant.App.Frontend/bin/Debug/net5.0/System.Runtime.CompilerServices.Unsafe.dll

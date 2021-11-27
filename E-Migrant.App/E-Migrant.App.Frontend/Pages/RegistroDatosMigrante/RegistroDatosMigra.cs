@@ -6,8 +6,10 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using E_Migrant.App.Dominio;
 using E_Migrant.App.Persistencia;
+using Microsoft.AspNetCore.Authorization;
 namespace E_Migrant.App.Frontend.Pages
 {
+    [Authorize]
     public class RegistroDatosMigra : PageModel
     {
         
