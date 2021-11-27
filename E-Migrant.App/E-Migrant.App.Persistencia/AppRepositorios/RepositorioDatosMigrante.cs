@@ -11,13 +11,13 @@ namespace E_Migrant.App.Persistencia
         {
             _appContext = appContext;
         }
-        Migrante IRepositorioDatosMigrante.AddDatosMigrante(string Nombre, string Apellidos, tipoIdentificacion TipoIdentificacion, string NumeroIdentificacion, string Pais, DateTime FechaNacimiento, string CorreoElectronico,
-         string NumeroTelefonico, string DireccionActual, string Ciudad, string SituacionLaboral)
+        Migrante IRepositorioDatosMigrante.AddDatosMigrante(string Nombre, string Apellidos, int TipoIdentificacion, string NumeroIdentificacion, string Pais, DateTime FechaNacimiento, string CorreoElectronico,
+         string NumeroTelefonico, string DireccionActual, string Ciudad, string situacionLaboral)
         {
 
             try
             {
-                if (Nombre == null)
+                if (Nombre == null || Apellidos==null || TipoIdentificacion == null || NumeroIdentificacion == null || Pais == null || FechaNacimiento == null)
                 {
                     return null;
                 }
@@ -35,7 +35,7 @@ namespace E_Migrant.App.Persistencia
                         numeroTelefonico =NumeroTelefonico,
                         direccionActual = DireccionActual,
                         ciudad = Ciudad,
-                        situacionLaboral =SituacionLaboral
+                        situacionLaboral =situacionLaboral
                     };
                     var DatosmIgranteAlmacenados= _appContext.Migrante.Add(DatosmIgrante);
                     _appContext.SaveChanges();

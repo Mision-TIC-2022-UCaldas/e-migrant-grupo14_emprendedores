@@ -6,7 +6,7 @@ namespace E_Migrant.App.Dominio
         public int id {get; set;}
         public string nombre {get; set;}
         public string apellidos {get; set;}
-        public tipoIdentificacion tipoIdentificacion {get; set;} 
+        public int tipoIdentificacion {get; set;} 
         public string numeroIdentificacion {get; set;}
         public string pais {get; set;}
         public DateTime fechaNacimiento {get;set;}

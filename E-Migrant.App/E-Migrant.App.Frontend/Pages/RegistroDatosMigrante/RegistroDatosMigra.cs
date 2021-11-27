@@ -21,7 +21,7 @@ namespace E_Migrant.App.Frontend.Pages
         
         string nombre { get; set; }
         string apellidos { get; set; }
-        tipoIdentificacion tipoIdentificacion { get; set; }
+        int tipoIdentificacion { get; set; }
         string numeroIdentificacion { get; set; }
         string pais { get; set; }
         DateTime fechaNacimiento { get; set; }
@@ -30,7 +30,7 @@ namespace E_Migrant.App.Frontend.Pages
         string direccionActual { get; set; }
         string ciudad { get; set; }
         string situacionLaboral { get; set; }
-        public IActionResult OnPost(string nombre,string apellidos,tipoIdentificacion tipoIdentificacion,
+        public IActionResult OnPost(string nombre,string apellidos,int tipoIdentificacion,
         string numeroIdentificacion,  string pais, DateTime fechaNacimiento, string correoElectronico,
         string numeroTelefonico , string direccionActual , string ciudad, string situacionLaboral )
         {
@@ -50,7 +50,7 @@ namespace E_Migrant.App.Frontend.Pages
          numeroTelefonico, direccionActual, ciudad, situacionLaboral);
         
             if(migrante==null){
-                return Page();
+                return RedirectToPage("../Error");
             }else{
                 return Redirect("../Index");
             }
