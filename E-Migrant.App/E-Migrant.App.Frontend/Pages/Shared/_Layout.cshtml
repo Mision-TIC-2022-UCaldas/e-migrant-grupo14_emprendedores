@@ -1,4 +1,10 @@
-﻿<!DOCTYPE html>
+﻿@using Microsoft.AspNetCore.Http
+@using Microsoft.AspNetCore.Identity
+
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -6,6 +12,7 @@
     <title>@ViewData["Title"] - E_Migrant.App.Frontend</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <header>
@@ -18,8 +25,8 @@
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
-                        @* @if (SignInManager.IsSignedIn(User))
-                    { *@
+                        @if (SignInManager.IsSignedIn(User))
+                    {
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-page="/Index">Home</a>
                         </li>
@@ -29,24 +36,26 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-page="/RegistroDatosMigrante/RegistroDatosMigra">Registro Datos Migrante</a>
                         </li>
-                        @* <li class="nav-item">
-                          <a id="manage" asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage">Hello @UserManager.GetUserName(User)!</a>
-                      </li> *@
+                        <li class="nav-item">
+                          <a class="nav-link text-dark" id="manage" asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage">Hello @UserManager.GetUserName(User)!</a>
+                      </li>
+                      <li class="nav-item"><a class="nav-link text-dark" href="/Identity/Account/Manage/ChangePassword">Actualización Credenciales</a></li>
                       <li class="nav-item">
                           <form id="logoutForm" class="form-inline" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Page("/Index", new { area = "" })">
                               <button id="logout" type="submit" class="nav-link btn btn-link text-dark" title="Logout">Logout</button>
                           </form>
                       </li>
-                      @* }
+                      
+                      }
                     else
-                    { *@
+                    {
                         <li class="nav-item">
                             <a class="nav-link text-dark" id="register" asp-area="Identity" asp-page="/Account/Register">Register</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-dark" id="login" asp-area="Identity" asp-page="/Account/Login">Login</a>
                         </li>
-                    @* }  *@
+                    } 
                     </ul>
                 </div>
             </div>
