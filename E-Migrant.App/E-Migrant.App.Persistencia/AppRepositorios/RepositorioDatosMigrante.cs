@@ -17,7 +17,7 @@ namespace E_Migrant.App.Persistencia
 
             try
             {
-                if (Nombre == null || Apellidos==null || TipoIdentificacion == null || NumeroIdentificacion == null || Pais == null || FechaNacimiento == null)
+                if (Nombre == null || Apellidos==null || NumeroIdentificacion == null || Pais == null )
                 {
                     return null;
                 }
