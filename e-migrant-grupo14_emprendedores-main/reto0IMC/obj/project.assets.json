@@ -1,0 +1,65 @@
+{
+  "version": 3,
+  "targets": {
+    "net5.0": {}
+  },
+  "libraries": {},
+  "projectFileDependencyGroups": {
+    "net5.0": []
+  },
+  "packageFolders": {
+    "/Users/mauricioroa/.nuget/packages/": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "/Users/mauricioroa/Desktop/e-migrant-grupo14_emprendedores/reto0IMC/reto0IMC.csproj",
+      "projectName": "reto0IMC",
+      "projectPath": "/Users/mauricioroa/Desktop/e-migrant-grupo14_emprendedores/reto0IMC/reto0IMC.csproj",
+      "packagesPath": "/Users/mauricioroa/.nuget/packages/",
+      "outputPath": "/Users/mauricioroa/Desktop/e-migrant-grupo14_emprendedores/reto0IMC/obj/",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "/Users/mauricioroa/.nuget/NuGet/NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "net5.0"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net5.0": {
+        "targetAlias": "net5.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.402/RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

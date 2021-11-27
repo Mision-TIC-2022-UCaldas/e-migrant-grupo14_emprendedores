@@ -1,0 +1,80 @@
+﻿@page
+@model E_Migrant.App.Frontend.Pages.RegistroDatosMigra
+@{
+}
+<div class="container m-md-4">
+
+    <div class="card col-md-5 p-md-5 container">
+        <h4 class="card-title text-center m-2">Registrar Datos Migrante</h4>
+        <form class="row g-3 needs-validation" method="post" novalidate>
+            <div class="col-md-12">
+                <label for="nombre" class="form-label">nombres</label>
+                <input type="text" class="form-control" id="nombre" name= "nombre" required/>
+                <div class="invalid-feedback">Este campo es requerido</div>
+            </div>
+            <div class="col-md-12">
+                <label for="apellidos" class="form-label">Apellidos</label>
+                <input type="text" class="form-control" id="apellidos" name= "apellidos" required />
+                <div class="invalid-feedback">Este campo es requerido</div>
+            </div>
+            <div class="col-md-12">
+                <label for="pais" class="form-label">País</label>
+                <input type="text" class="form-control" id="pais" required name= "pais"/>
+                <div class="invalid-feedback">Este campo es requerido</div>
+            </div>
+            <div class="col-md-6 mt-4">
+                    <select class= aria-label="Default select example" name= "tipoIdentificacion" required>
+                        
+                        <option selected >Tipo Documento</option>
+                        <option value="0">Tarjeta identidad</option>
+                        <option value="1">cedula extranjeria</option>
+                        <option value="2">Pasaporte</option>
+                        <option value="3">otro</option>
+                    </select>
+                    <div class="invalid-feedback">Este campo es requerido</div>
+            </div>
+            <div class="col-md-6">
+                <label for="numeroIdentificacion" class="form-label">Identificación</label>
+                <input type="text" class="form-control" id="numeroIdentificacion" name= "numeroIdentificacion" required />
+                <div class="invalid-feedback">Este campo es requerido</div>
+            </div>
+            <div class="col-md-12">
+                <label for="ciudad" class="form-label">Ciudad</label>
+                <input type="text" class="form-control" id="ciudad" name="ciudad"/>
+            </div>
+            <div class="col-md-12">
+                <label for="cituacionLaboral" class="form-label">Cituación laboral</label>
+                <input type="text" class="form-control" id="cituacionLaboral" name="situacionLaboral" />
+            </div>
+            <div class="col-md-12">
+                <label for="txtDireccionActual" class="form-label">Dirección Actual</label>
+                <input type="text" class="form-control" id="txtDireccionActual" name="direccionActual" />
+            </div>
+            
+            
+            <div class="col-md-12">
+                <label for="txtCorreo" class="form-label">Correo electronico</label>
+                <input type="text" class="form-control" id="txtCorreo" name="correoElectronico" />
+            </div>
+               
+            
+            
+            <div class="col-md-12">
+                <label for="txtCelular" class="form-label">Numero Telefonico</label>
+                <input type="text" class="form-control" id="txtCelular" name="numeroTelefonico" />
+            </div>
+            <div class="col-md-12">
+                <label for="fechaNacimiento" class="form-label">Fecha Nacimiento</label>
+                <input type="text" class="form-control" id="fechaNacimiento" name="fechaNacimiento" required />
+                <div class="invalid-feedback">Este campo es requerido</div>
+            </div>
+
+            <div class="col-12 mx-auto ">
+                <button class="btn btn-primary" type="submit">Registrar</button>
+            </div>
+
+
+        </form>
+    </div>
+
+</div>
