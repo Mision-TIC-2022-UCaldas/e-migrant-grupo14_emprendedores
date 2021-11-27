@@ -11,23 +11,25 @@ using E_Migrant.App.Persistencia;
 
 
 
-namespace E_Migrant.App.Frontend.Pages
+namespace E_Migrant.App.Frontend.Pages.MisDatosMigrante
 {
     public class MisDatosMigranteModel : PageModel
     {   
-        public Migrante migrante { get; set; }
+        
+
         
         /*private readonly UserManager<IdentityUser> _userManager;
         private readonly SignInManager<IdentityUser> _signInManager;*/
-        public readonly Persistencia.IRepositorioDatosMigrante repositorioDatosMigrante;
-        public MisDatosMigranteModel(){
+        //public readonly Persistencia.IRepositorioDatosMigrante repositorioDatosMigrante;>
+        /*public MisDatosMigranteModel(){
                 
             this.repositorioDatosMigrante = new RepositorioDatosMigrante(new E_Migrant.App.Persistencia.AppContext());
-            }
-          
-        public IActionResult OnGet(string? correo){
+            }*/
+            private static IRepositorioDatosMigrante _repoMigrante = new RepositorioDatosMigrante(new Persistencia.AppContext());
+          public Migrante migrante { get; set; }
+        public IActionResult OnGet(string correo){
              
-             migrante= repositorioDatosMigrante.GetDatosMigranteCoreo(correo);
+             migrante= _repoMigrante.GetDatosMigranteCoreo(correo);
             if(migrante==null){
                return RedirectToPage("../Error");
             }else{

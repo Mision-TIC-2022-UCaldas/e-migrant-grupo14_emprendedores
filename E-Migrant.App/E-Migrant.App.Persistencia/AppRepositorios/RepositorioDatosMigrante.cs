@@ -61,8 +61,8 @@ namespace E_Migrant.App.Persistencia
         _appContext.SaveChanges();
         return DatosmIgranteAlmacenados.Entity;
         }
-        Migrante IRepositorioDatosMigrante.GetDatosMigranteCoreo(string CorreoElectronico){
-            return _appContext.Migrante.FirstOrDefault(M => M.correoElectronico==CorreoElectronico);
+        Migrante IRepositorioDatosMigrante.GetDatosMigranteCoreo(string correo){
+            return _appContext.Migrante.FirstOrDefault(M => M.correoElectronico==correo);
         }
 
     }

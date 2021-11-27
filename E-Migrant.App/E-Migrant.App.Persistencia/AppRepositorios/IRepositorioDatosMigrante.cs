@@ -9,6 +9,6 @@ namespace E_Migrant.App.Persistencia
          string NumeroTelefonico, string DireccionActual, string Ciudad, string situacionLaboral);
          Migrante Misdatos(string CorreoElectronico);
 
-         Migrante GetDatosMigranteCoreo(string CorreoElectronico);
+         Migrante GetDatosMigranteCoreo(string correo);
     }
 }
