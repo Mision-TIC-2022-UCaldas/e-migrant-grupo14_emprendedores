@@ -66,8 +66,8 @@
                 <input asp-for="Input.ciudad" type="text" class="form-control" id="ciudad" />
             </div>
             <div class="col-md-12">
-                <label for="cituacionLaboral" class="form-label">Situación laboral</label>
-                <input asp-for="Input.SituacionLaboral" type="text" class="form-control" id="cituacionLaboral" name="situacionLaboral" />
+                <label for="situacionLaboral" class="form-label">Situación laboral</label>
+                <input asp-for="Input.situacionLaboral" type="text" class="form-control" id="situacionLaboral"  />
             </div>
             <div class="col-md-12">
                 <label for="txtDireccionActual" class="form-label">Dirección Actual</label>
@@ -76,7 +76,7 @@
             
             <div class="col-md-12">
                 <label for="txtCelular" class="form-label">Numero Telefonico</label>
-                <input type="text" class="form-control" id="txtCelular" />
+                <input type="text" asp-for="Input.numeroTelefonico"class="form-control" id="txtCelular" />
             </div>
             <div class="col-md-12">
                 <label for="fechaNacimiento" class="form-label">Fecha Nacimiento</label>

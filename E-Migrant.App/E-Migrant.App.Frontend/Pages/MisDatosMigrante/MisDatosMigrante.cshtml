@@ -9,69 +9,81 @@
 @inject UserManager<IdentityUser> UserManager
 @model E_Migrant.App.Frontend.Pages.MisDatosMigrante.MisDatosMigranteModel
 
-<form>
-    <div class="col-md-12">
+<div class="container m-md-4">
 
-        <label for="nombre" class="form-label">nombres</label>
-        <input value="@UserManager.GetUserName(User)" asp-area="Identity" type="text"  class="form-control"
-            id="nombre" />
-        <div class="invalid-feedback">Este campo es requerido</div>
-    </div>
-    <div class="col-md-12">
-
-        <h1>@Model.migrante.nombre Hola</h1>
-        
-        
-    </div>
-
-    <!--
+    <div class="card col-md-5 p-md-5 container">
+        <h4 class="card-title text-center m-2">Mis Datos</h4>
+        <form class="row g-3 needs-validation" method="post" novalidate>
+            
+                
+                <input type="hidden" asp-for="migrante.id" />
+            
             <div class="col-md-12">
-                <label for="apellidos" class="form-label">Apellidos</label>
-                <input type="text" asp-for="Input.apellido" class="form-control" id="apellidos"  required />
-                <div class="invalid-feedback">Este campo es requerido</div>
+                <label asp-for="migrante.nombre" class="form-label"></label>
+                <input type="text" class="form-control" asp-for="migrante.nombre" />
             </div>
             <div class="col-md-12">
-                <label for="pais" class="form-label">País</label>
-                <input type="text" asp-for="Input.pais" class="form-control" id="pais" required />
+                <label asp-for="migrante.apellidos" class="form-label"></label>
+                <input type="text" class="form-control" asp-for="migrante.apellidos" />
+            </div>
+            <div class="col-md-12">
+                <label asp-for="migrante.pais" class="form-label"></label>
+                <input type="text" class="form-control" asp-for="migrante.pais"/>
                 <div class="invalid-feedback">Este campo es requerido</div>
             </div>
             <div class="col-md-6 mt-4">
-                    <select class= aria-label="Default select example" asp-for="Input.TipoDocumento" required>
-
+                    <select class= aria-label="Default select example" asp-for="migrante.tipoIdentificacion" required>
+                        
                         <option selected >Tipo Documento</option>
                         <option value="0">Tarjeta identidad</option>
                         <option value="1">cedula extranjeria</option>
                         <option value="2">Pasaporte</option>
                         <option value="3">otro</option>
                     </select>
-                    <div class="invalid-feedback">Este campo es requerido</div>
             </div>
             <div class="col-md-6">
-                <label for="numeroDocumento" class="form-label">Identificación</label>
-                <input asp-for="Input.numeroDocumento" type="text" class="form-control" id="numeroIdentificacion"  required />
+                <label asp-for="migrante.numeroIdentificacion" class="form-label"></label>
+                <input type="text" class="form-control" asp-for="migrante.numeroIdentificacion" />
+            </div>
+            <div class="col-md-12">
+                <label asp-for="migrante.ciudad"class="form-label"></label>
+                <input type="text" class="form-control" asp-for="migrante.ciudad"/>
+            </div>
+            <div class="col-md-12">
+                <label asp-for="migrante.situacionLaboral" class="form-label"></label>
+                <input type="text" class="form-control" asp-for="migrante.situacionLaboral" />
+            </div>
+            <div class="col-md-12">
+                <label asp-for="migrante.direccionActual" class="form-label"></label>
+                <input type="text" class="form-control" asp-for="migrante.direccionActual" />
+            </div>
+            
+            
+            <div class="col-md-12">
+                <label asp-for="migrante.correoElectronico" class="form-label"></label>
+                <input type="text" class="form-control" asp-for="migrante.correoElectronico" />
+            </div>
+               
+            
+            
+            <div class="col-md-12">
+                <label asp-for="migrante.numeroTelefonico" class="form-label"></label>
+                <input type="text" class="form-control" asp-for="migrante.numeroTelefonico" />
+            </div>
+            <div class="col-md-12">
+                <label asp-for="migrante.fechaNacimiento" class="form-label"></label>
+                <input type="text" class="form-control" asp-for="migrante.fechaNacimiento" />
                 <div class="invalid-feedback">Este campo es requerido</div>
-            </div>
-            <div class="col-md-12">
-                <label for="ciudad" class="form-label">Ciudad</label>
-                <input asp-for="Input.ciudad" type="text" class="form-control" id="ciudad" />
-            </div>
-            <div class="col-md-12">
-                <label for="cituacionLaboral" class="form-label">Situación laboral</label>
-                <input asp-for="Input.SituacionLaboral" type="text" class="form-control" id="cituacionLaboral" name="situacionLaboral" />
-            </div>
-            <div class="col-md-12">
-                <label for="txtDireccionActual" class="form-label">Dirección Actual</label>
-                <input asp-for="Input.DireccionActual" type="text" class="form-control" id="txtDireccionActual"  />
             </div>
 
-            <div class="col-md-12">
-                <label for="txtCelular" class="form-label">Numero Telefonico</label>
-                <input type="text" class="form-control" id="txtCelular" />
+            <div class="col-12 mx-auto mt-2">
+                <button class="btn btn-primary" type="submit">Actualizar</button>
             </div>
-            <div class="col-md-12">
-                <label for="fechaNacimiento" class="form-label">Fecha Nacimiento</label>
-                <input asp-for="Input.fechaNacimiento" type="text" class="form-control" id="fechaNacimiento" required />
-                <div class="invalid-feedback">Este campo es requerido</div>
-            </div>
-            -->
-</form>
+            
+
+
+        </form>
+        
+    </div>
+
+</div>

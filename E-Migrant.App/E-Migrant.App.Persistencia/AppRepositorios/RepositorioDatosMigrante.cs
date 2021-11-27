@@ -64,6 +64,24 @@ namespace E_Migrant.App.Persistencia
         Migrante IRepositorioDatosMigrante.GetDatosMigranteCoreo(string correo){
             return _appContext.Migrante.FirstOrDefault(M => M.correoElectronico==correo);
         }
+        Migrante IRepositorioDatosMigrante.updateDatosmIgracion(Migrante migrante){
+            var datosMigranteEncontrado = _appContext.Migrante.FirstOrDefault(M => M.id==migrante.id);
+            if(datosMigranteEncontrado!=null){
+                datosMigranteEncontrado.nombre= migrante.nombre;
+                datosMigranteEncontrado.apellidos = migrante.apellidos;
+                datosMigranteEncontrado.tipoIdentificacion= migrante.tipoIdentificacion;
+                datosMigranteEncontrado.numeroIdentificacion = migrante.numeroIdentificacion;
+                datosMigranteEncontrado.numeroTelefonico = migrante.numeroTelefonico;
+                datosMigranteEncontrado.pais= migrante.pais;
+                datosMigranteEncontrado.ciudad = migrante.ciudad;
+                datosMigranteEncontrado.direccionActual= migrante.direccionActual;
+                datosMigranteEncontrado.situacionLaboral= migrante.situacionLaboral;
+                datosMigranteEncontrado.fechaNacimiento = migrante.fechaNacimiento;
+                _appContext.SaveChanges();
+            }
+            return datosMigranteEncontrado;
+            
+        }
 
     }
 }

@@ -28,14 +28,38 @@ namespace E_Migrant.App.Frontend.Pages.MisDatosMigrante
             private static IRepositorioDatosMigrante _repoMigrante = new RepositorioDatosMigrante(new Persistencia.AppContext());
           public Migrante migrante { get; set; }
         public IActionResult OnGet(string correo){
-             
-             migrante= _repoMigrante.GetDatosMigranteCoreo(correo);
+            if (correo != null)
+            {
+                migrante = _repoMigrante.GetDatosMigranteCoreo(correo);                
+            }
+            else
+            {
+                
+                migrante= new Migrante();
+            }
+            // migrante= _repoMigrante.GetDatosMigranteCoreo(correo);
             if(migrante==null){
                return RedirectToPage("../Error");
             }else{
                 return Page();
             }
         
+    }
+    public IActionResult OnPost(Migrante migrante){
+            if (ModelState.IsValid)
+            {
+                if (migrante.id > 0)
+                {
+                    _repoMigrante.updateDatosmIgracion(migrante);
+                }
+                
+                return Page();
+            }
+            else
+            {
+                return RedirectToPage("../Error");
+            }
+
     }
 }
 }

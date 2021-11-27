@@ -70,11 +70,11 @@ namespace E_Migrant.App.Frontend.Areas.Identity.Pages.Account
             public string pais { get; set; }
             [Display(Name = "DireccionActual")]
             public string DireccionActual { get; set; }
-            [Display(Name = "numeroTelefono")]
-            public string numeroTelefono {get; set;}
-            [Display(Name = "SituacionLaboral")]
+            [Display(Name = "numeroTelefonico")]
+            public string numeroTelefonico {get; set;}
+            [Display(Name = "situacionLaboral")]
             
-            public string SituacionLaboral { get; set; }
+            public string situacionLaboral { get; set; }
             [Display(Name = "ciudad")]
             public string ciudad { get; set; }
             [Required]
@@ -108,7 +108,7 @@ namespace E_Migrant.App.Frontend.Areas.Identity.Pages.Account
             {
                 var user = new IdentityUser { UserName = Input.Email, Email = Input.Email };
                 var result = await _userManager.CreateAsync(user, Input.Password);
-                var DatosmIgrante = repositorioDatosMigrante.AddDatosMigrante(Input.nombre,Input.apellido,Input.TipoDocumento,Input.numeroDocumento, Input.pais, Input.fechaNacimiento, Input.Email,Input.numeroTelefono, Input.DireccionActual, Input.ciudad, Input.SituacionLaboral);
+                var DatosmIgrante = repositorioDatosMigrante.AddDatosMigrante(Input.nombre,Input.apellido,Input.TipoDocumento,Input.numeroDocumento, Input.pais, Input.fechaNacimiento, Input.Email,Input.numeroTelefonico, Input.DireccionActual, Input.ciudad, Input.situacionLaboral);
                 if (result.Succeeded)
                 {
                     _logger.LogInformation("User created a new account with password.");

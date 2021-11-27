@@ -10,5 +10,7 @@ namespace E_Migrant.App.Persistencia
          Migrante Misdatos(string CorreoElectronico);
 
          Migrante GetDatosMigranteCoreo(string correo);
+
+         Migrante updateDatosmIgracion(Migrante migrante );
     }
 }
