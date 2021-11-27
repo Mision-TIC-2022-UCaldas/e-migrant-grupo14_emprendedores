@@ -1,4 +1,8 @@
 ﻿@page
+@using Microsoft.AspNetCore.Http
+@using Microsoft.AspNetCore.Identity
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
 @model E_Migrant.App.Frontend.Pages.RegistroDatosMigra
 @{
 }
@@ -72,9 +76,13 @@
             <div class="col-12 mx-auto ">
                 <button class="btn btn-primary" type="submit">Registrar</button>
             </div>
+            
 
 
         </form>
+        <div class="col-12 mx-auto ">
+                <a asp-page="../MisdatosMigrante/MisdatosMigrante" asp-route-correo="@UserManager.GetUserName(User)">Mis datos</a>
+        </div>
     </div>
 
 </div>
