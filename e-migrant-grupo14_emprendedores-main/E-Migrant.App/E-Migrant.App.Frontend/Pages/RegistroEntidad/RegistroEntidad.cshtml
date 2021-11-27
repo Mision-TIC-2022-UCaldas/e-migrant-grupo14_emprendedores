@@ -1,0 +1,114 @@
+﻿@page
+@model E_Migrante.App.Frontend.RegistroEntidadModel
+@{
+}
+<div class="container m-md-4">
+
+    <div class="card col-md-5 p-md-5 container">
+        <h4 class="card-title text-center m-2">Registrar Datos Entidad</h4>
+        <form class="row g-3 needs-validation" method="post" novalidate>
+            <div class="col-md-12">
+                <label for="razonSocial" class="form-label">Razon Social</label>
+                <input type="text" class="form-control" id="razonSocial" name= "razonSocial" required/>
+                <div class="invalid-feedback">Este campo es requerido</div>
+            </div>
+            <div class="col-md-12">
+                <label for="nit" class="form-label">Nit</label>
+                <input type="text" class="form-control" id="nit" name= "nit" required />
+                <div class="invalid-feedback">Este campo es requerido</div>
+            </div>
+            <div class="col-md-12">
+                <label for="direccion" class="form-label">Dirección</label>
+                <input type="text" class="form-control" id="direccion" required name= "direccion"/>
+                <div class="invalid-feedback">Este campo es requerido</div>
+            </div>
+            <div class="col-md-12">
+                <label for="telefono" class="form-label">Teléfono</label>
+                <input type="text" class="form-control" id="telefono" required name= "telefono"/>
+                <div class="invalid-feedback">Este campo es requerido</div>
+            </div>
+            <div class="col-md-12">
+                <label for="direccionElectronica" class="form-label">Dirección electrónica</label>
+                <input type="text" class="form-control" id="direccionElectronica" name= "direccionElectronica"/>
+            </div>
+            <div class="col-md-12">
+                <label for="paginaWeb" class="form-label">Página Web</label>
+                <input type="paginaWeb" class="form-control" id="paginaWeb" name= "telefono"/>
+            </div>
+            <div class="col-md-6 mt-4">
+                    <select class= aria-label="Default select example" name= "Sector" required>
+                        
+                        <option selected >Sector al que pertenece</option>
+                        <option value="0">Público</option>
+                        <option value="1">Privado</option>
+                        <option value="2">Sin ánimo de lucro</option>
+                        <option value="3">No gubernamental</option>
+                        <option value="4">otro</option>
+                    </select>
+                    <div class="invalid-feedback">Este campo es requerido</div>
+            </div>
+
+            <div class="col-md-6 mt-4">
+                    <select class= aria-label="Default select example" name= "Tipo de servicios que ofrece" required>
+                        
+                        <option selected >Tipo de servicios que ofrece</option>
+                        <option value="0">Salud</option>
+                        <option value="1">Jurídicos</option>
+                        <option value="2">Víveres</option>
+                        <option value="3">Comida preparada</option>
+                        <option value="4">Empleo</option>
+                        <option value="5">Alojamiento temporal</option>
+                        <option value="6">Alojamiento permanente</option>
+                        <option value="7">Educación</option>
+                        <option value="8">Otros</option>
+                    </select>
+                    <div class="invalid-feedback">Este campo es requerido</div>
+            </div>
+
+            <!--
+            <div class="col-md-6">
+                <label for="numeroIdentificacion" class="form-label">Identificación</label>
+                <input type="text" class="form-control" id="numeroIdentificacion" name= "numeroIdentificacion" required />
+                <div class="invalid-feedback">Este campo es requerido</div>
+            </div>
+            <div class="col-md-12">
+                <label for="ciudad" class="form-label">Ciudad</label>
+                <input type="text" class="form-control" id="ciudad" name="ciudad"/>
+            </div>
+            <div class="col-md-12">
+                <label for="cituacionLaboral" class="form-label">Cituación laboral</label>
+                <input type="text" class="form-control" id="cituacionLaboral" name="situacionLaboral" />
+            </div>
+            <div class="col-md-12">
+                <label for="txtDireccionActual" class="form-label">Dirección Actual</label>
+                <input type="text" class="form-control" id="txtDireccionActual" name="direccionActual" />
+            </div>
+            
+            
+            <div class="col-md-12">
+                <label for="txtCorreo" class="form-label">Correo electronico</label>
+                <input type="text" class="form-control" id="txtCorreo" name="correoElectronico" />
+            </div>
+               
+            
+            
+            <div class="col-md-12">
+                <label for="txtCelular" class="form-label">Numero Telefonico</label>
+                <input type="text" class="form-control" id="txtCelular" name="numeroTelefonico" />
+            </div>
+            <div class="col-md-12">
+                <label for="fechaNacimiento" class="form-label">Fecha Nacimiento</label>
+                <input type="text" class="form-control" id="fechaNacimiento" name="fechaNacimiento" required />
+                <div class="invalid-feedback">Este campo es requerido</div>
+            </div>
+
+-->
+            <div class="col-12 mx-auto mt-2">
+                <button class="btn btn-primary" type="submit">Registrar</button>
+            </div>
+
+
+        </form>
+    </div>
+
+</div>
