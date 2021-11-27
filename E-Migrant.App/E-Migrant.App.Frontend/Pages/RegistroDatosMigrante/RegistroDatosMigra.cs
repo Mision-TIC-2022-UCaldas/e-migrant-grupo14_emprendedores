@@ -10,6 +10,7 @@ namespace E_Migrant.App.Frontend.Pages
 {
     public class RegistroDatosMigra : PageModel
     {
+        
         public readonly Persistencia.IRepositorioDatosMigrante repositorioDatosMigrante;
         [BindProperty]
         public Migrante migrante { get; set; }
