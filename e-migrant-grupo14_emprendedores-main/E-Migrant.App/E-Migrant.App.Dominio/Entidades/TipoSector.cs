@@ -1,6 +1,6 @@
 namespace E_Migrant.App.Dominio
 {
-    public enum Sector
+    public enum TipoSector
     {
         publico,
         privado,

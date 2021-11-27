@@ -1,7 +1,7 @@
 //using System;
 namespace E_Migrant.App.Dominio
 {
-    public class DatosEntidades
+    public class RegistroEntidad
     {
         public string razonSocial{get;set;}
 

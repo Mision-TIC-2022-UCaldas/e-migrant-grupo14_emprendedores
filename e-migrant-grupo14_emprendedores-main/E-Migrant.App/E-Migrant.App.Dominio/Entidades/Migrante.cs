@@ -15,6 +15,5 @@ namespace E_Migrant.App.Dominio
         public string direccionActual {get;set;}
         public string ciudad {get; set;}
         public string situacionLaboral {get; set;}
-
     }
 }
