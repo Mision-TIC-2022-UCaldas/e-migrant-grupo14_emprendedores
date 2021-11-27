@@ -1,11 +1,16 @@
 using System;
 using E_Migrant.App.Dominio;
+using System.Collections.Generic;
+using System.Linq;
+using Microsoft.EntityFrameworkCore;
+using E_Migrant.App.Persistencia;
 namespace E_Migrant.App.Persistencia
 {
     public class RepositorioDatosMigrante : IRepositorioDatosMigrante
     {
 
         private readonly AppContext _appContext;
+        
 
         public RepositorioDatosMigrante(AppContext appContext)
         {
@@ -49,6 +54,15 @@ namespace E_Migrant.App.Persistencia
             }
 
             
+        }
+        Migrante IRepositorioDatosMigrante.Misdatos(string CorreoElectronico){
+        var DatosmIgrante = new Migrante{correoElectronico = CorreoElectronico};
+        var DatosmIgranteAlmacenados= _appContext.Migrante.Add(DatosmIgrante);
+        _appContext.SaveChanges();
+        return DatosmIgranteAlmacenados.Entity;
+        }
+        Migrante IRepositorioDatosMigrante.GetDatosMigranteCoreo(string CorreoElectronico){
+            return _appContext.Migrante.FirstOrDefault(M => M.correoElectronico==CorreoElectronico);
         }
 
     }

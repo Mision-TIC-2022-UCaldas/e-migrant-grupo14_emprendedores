@@ -7,5 +7,8 @@ namespace E_Migrant.App.Persistencia
     {
          Migrante AddDatosMigrante(string Nombre, string Apellidos, int TipoIdentificacion, string NumeroIdentificacion, string Pais, DateTime FechaNacimiento, string CorreoElectronico,
          string NumeroTelefonico, string DireccionActual, string Ciudad, string situacionLaboral);
+         Migrante Misdatos(string CorreoElectronico);
+
+         Migrante GetDatosMigranteCoreo(string CorreoElectronico);
     }
 }

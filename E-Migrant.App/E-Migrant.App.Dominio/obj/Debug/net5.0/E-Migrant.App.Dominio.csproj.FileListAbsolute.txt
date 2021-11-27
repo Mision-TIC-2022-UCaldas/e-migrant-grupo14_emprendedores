@@ -22,3 +22,15 @@ C:/Users/Exneider/Documents/Hackatón/e-migrant-grupo14_emprendedores/E-Migrant.
 /Users/mauricioroa/Desktop/e-migrant-grupo14_emprendedores/E-Migrant.App/E-Migrant.App.Dominio/obj/Debug/net5.0/E-Migrant.App.Dominio.dll
 /Users/mauricioroa/Desktop/e-migrant-grupo14_emprendedores/E-Migrant.App/E-Migrant.App.Dominio/obj/Debug/net5.0/ref/E-Migrant.App.Dominio.dll
 /Users/mauricioroa/Desktop/e-migrant-grupo14_emprendedores/E-Migrant.App/E-Migrant.App.Dominio/obj/Debug/net5.0/E-Migrant.App.Dominio.pdb
+C:\Users\Exneider\Desktop\Hackaton\e-migrant-grupo14_emprendedores\E-Migrant.App\E-Migrant.App.Dominio\bin\Debug\net5.0\E-Migrant.App.Dominio.deps.json
+C:\Users\Exneider\Desktop\Hackaton\e-migrant-grupo14_emprendedores\E-Migrant.App\E-Migrant.App.Dominio\bin\Debug\net5.0\E-Migrant.App.Dominio.dll
+C:\Users\Exneider\Desktop\Hackaton\e-migrant-grupo14_emprendedores\E-Migrant.App\E-Migrant.App.Dominio\bin\Debug\net5.0\ref\E-Migrant.App.Dominio.dll
+C:\Users\Exneider\Desktop\Hackaton\e-migrant-grupo14_emprendedores\E-Migrant.App\E-Migrant.App.Dominio\bin\Debug\net5.0\E-Migrant.App.Dominio.pdb
+C:\Users\Exneider\Desktop\Hackaton\e-migrant-grupo14_emprendedores\E-Migrant.App\E-Migrant.App.Dominio\obj\Debug\net5.0\E-Migrant.App.Dominio.csproj.AssemblyReference.cache
+C:\Users\Exneider\Desktop\Hackaton\e-migrant-grupo14_emprendedores\E-Migrant.App\E-Migrant.App.Dominio\obj\Debug\net5.0\E-Migrant.App.Dominio.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Exneider\Desktop\Hackaton\e-migrant-grupo14_emprendedores\E-Migrant.App\E-Migrant.App.Dominio\obj\Debug\net5.0\E-Migrant.App.Dominio.AssemblyInfoInputs.cache
+C:\Users\Exneider\Desktop\Hackaton\e-migrant-grupo14_emprendedores\E-Migrant.App\E-Migrant.App.Dominio\obj\Debug\net5.0\E-Migrant.App.Dominio.AssemblyInfo.cs
+C:\Users\Exneider\Desktop\Hackaton\e-migrant-grupo14_emprendedores\E-Migrant.App\E-Migrant.App.Dominio\obj\Debug\net5.0\E-Migrant.App.Dominio.csproj.CoreCompileInputs.cache
+C:\Users\Exneider\Desktop\Hackaton\e-migrant-grupo14_emprendedores\E-Migrant.App\E-Migrant.App.Dominio\obj\Debug\net5.0\E-Migrant.App.Dominio.dll
+C:\Users\Exneider\Desktop\Hackaton\e-migrant-grupo14_emprendedores\E-Migrant.App\E-Migrant.App.Dominio\obj\Debug\net5.0\ref\E-Migrant.App.Dominio.dll
+C:\Users\Exneider\Desktop\Hackaton\e-migrant-grupo14_emprendedores\E-Migrant.App\E-Migrant.App.Dominio\obj\Debug\net5.0\E-Migrant.App.Dominio.pdb

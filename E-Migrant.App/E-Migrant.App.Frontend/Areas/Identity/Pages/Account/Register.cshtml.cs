@@ -13,6 +13,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.WebUtilities;
 using Microsoft.Extensions.Logging;
+using E_Migrant.App.Persistencia;
 
 namespace E_Migrant.App.Frontend.Areas.Identity.Pages.Account
 {
@@ -23,6 +24,7 @@ namespace E_Migrant.App.Frontend.Areas.Identity.Pages.Account
         private readonly UserManager<IdentityUser> _userManager;
         private readonly ILogger<RegisterModel> _logger;
         private readonly IEmailSender _emailSender;
+        public readonly Persistencia.IRepositorioDatosMigrante repositorioDatosMigrante;
 
         public RegisterModel(
             UserManager<IdentityUser> userManager,
@@ -34,6 +36,7 @@ namespace E_Migrant.App.Frontend.Areas.Identity.Pages.Account
             _signInManager = signInManager;
             _logger = logger;
             _emailSender = emailSender;
+            this.repositorioDatosMigrante = new RepositorioDatosMigrante(new E_Migrant.App.Persistencia.AppContext());
         }
 
         [BindProperty]
@@ -49,9 +52,38 @@ namespace E_Migrant.App.Frontend.Areas.Identity.Pages.Account
             [EmailAddress]
             [Display(Name = "Email")]
             public string Email { get; set; }
+            [Required]
+            [Display(Name = "nombre")]
+            public string nombre { get; set; }
 
             [Required]
-            [StringLength(100, ErrorMessage = "The {0} must be at least {2} and at max {1} characters long.", MinimumLength = 6)]
+            [Display(Name = "apellido")]
+            public string apellido { get; set; }
+            [Required]
+            [Display(Name = "TipoDocumento")]
+            public int TipoDocumento { get; set; }
+            [Required]
+            [Display(Name = "numeroDocumento")]
+            public string numeroDocumento { get; set; }
+            [Required]
+            [Display(Name = "pais")]
+            public string pais { get; set; }
+            [Display(Name = "DireccionActual")]
+            public string DireccionActual { get; set; }
+            [Display(Name = "numeroTelefono")]
+            public string numeroTelefono {get; set;}
+            [Display(Name = "SituacionLaboral")]
+            
+            public string SituacionLaboral { get; set; }
+            [Display(Name = "ciudad")]
+            public string ciudad { get; set; }
+            [Required]
+            [Display(Name = "fechaNacimiento")]
+            public DateTime fechaNacimiento { get; set; }
+
+
+            [Required]
+            [StringLength(100, ErrorMessage = "The {0} must be at least {2} and at max {1} characters long.", MinimumLength = 4)]
             [DataType(DataType.Password)]
             [Display(Name = "Password")]
             public string Password { get; set; }
@@ -76,6 +108,7 @@ namespace E_Migrant.App.Frontend.Areas.Identity.Pages.Account
             {
                 var user = new IdentityUser { UserName = Input.Email, Email = Input.Email };
                 var result = await _userManager.CreateAsync(user, Input.Password);
+                var DatosmIgrante = repositorioDatosMigrante.AddDatosMigrante(Input.nombre,Input.apellido,Input.TipoDocumento,Input.numeroDocumento, Input.pais, Input.fechaNacimiento, Input.Email,Input.numeroTelefono, Input.DireccionActual, Input.ciudad, Input.SituacionLaboral);
                 if (result.Succeeded)
                 {
                     _logger.LogInformation("User created a new account with password.");
