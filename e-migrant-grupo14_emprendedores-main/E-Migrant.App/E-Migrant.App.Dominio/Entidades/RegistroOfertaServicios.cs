@@ -1,4 +1,5 @@
-//using System;
+using System;
+//using TipoEstadoServicio;
 namespace E_Migrant.App.Dominio
 {
     public class RegistroOfertaServicios

@@ -1,4 +1,6 @@
-//using System;
+using System;
+//using TipoServicioOfrecido;
+
 namespace E_Migrant.App.Dominio
 {
     public class RegistroEntidad
@@ -17,7 +19,7 @@ namespace E_Migrant.App.Dominio
 
         public string paginaWeb{get;set;}
 
-        public Sector sector{get;set;}
+        public TipoSector sector{get;set;}
 
         public TipoServicioOfrecido servicioQueOfrece{get;set;}
     }

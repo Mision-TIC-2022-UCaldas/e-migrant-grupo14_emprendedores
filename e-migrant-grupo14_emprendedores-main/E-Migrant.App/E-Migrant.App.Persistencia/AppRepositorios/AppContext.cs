@@ -14,6 +14,5 @@ namespace E_Migrant.App.Persistencia
                 .UseSqlServer("Data Source = (localdb)\\MSSQLLocalDB; Initial Catalog = grupo14_emprendedores");
             }
         }
-    }
-    
+    }   
 }

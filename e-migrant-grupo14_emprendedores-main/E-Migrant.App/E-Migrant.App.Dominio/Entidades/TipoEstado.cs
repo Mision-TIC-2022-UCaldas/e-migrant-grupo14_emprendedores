@@ -1,6 +1,6 @@
 namespace E_Migrant.App.Dominio
 {
-    public enum Estado
+    public enum TipoEstado
     {
         enEespera,
         autorizado,
