@@ -11,6 +11,7 @@ namespace E_Migrant.App.Persistencia
         {
             _appContext = appContext;
         }
+        
         Migrante IRepositorioDatosMigrante.AddDatosMigrante(string Nombre, string Apellidos, int TipoIdentificacion, string NumeroIdentificacion, string Pais, DateTime FechaNacimiento, string CorreoElectronico,
          string NumeroTelefonico, string DireccionActual, string Ciudad, string situacionLaboral)
         {

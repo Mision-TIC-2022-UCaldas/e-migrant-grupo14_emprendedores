@@ -15,3 +15,4 @@
 /Users/mauricioroa/Desktop/e-migrant-grupo14_emprendedores/E-Migrant.App/E-Migrant.App.Persistencia/obj/Debug/net5.0/ref/E-Migrant.App.Persistencia.dll
 /Users/mauricioroa/Desktop/e-migrant-grupo14_emprendedores/E-Migrant.App/E-Migrant.App.Persistencia/obj/Debug/net5.0/E-Migrant.App.Persistencia.pdb
 /Users/mauricioroa/Desktop/e-migrant-grupo14_emprendedores/E-Migrant.App/E-Migrant.App.Persistencia/obj/Debug/net5.0/E-Migrant.App.Persistencia.genruntimeconfig.cache
+/Users/mauricioroa/Desktop/e-migrant-grupo14_emprendedores/E-Migrant.App/E-Migrant.App.Persistencia/obj/Debug/net5.0/E-Migrant.App.Persistencia.csproj.CopyComplete
