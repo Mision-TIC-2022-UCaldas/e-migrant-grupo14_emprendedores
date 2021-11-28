@@ -5,7 +5,17 @@ namespace E_Migrant.App.Persistencia
 {
     public interface IRepositorioDatosMigrante
     {
-         Migrante AddDatosMigrante(string Nombre, string Apellidos, int TipoIdentificacion, string NumeroIdentificacion, string Pais, DateTime FechaNacimiento, string CorreoElectronico,
-         string NumeroTelefonico, string DireccionActual, string Ciudad, string situacionLaboral);
+         Migrante AddDatosMigrante(
+            string Nombre, 
+            string Apellidos, 
+            int TipoIdentificacion, 
+            string NumeroIdentificacion, 
+            string Pais, 
+            DateTime FechaNacimiento, 
+            string CorreoElectronico,         
+            string NumeroTelefonico, 
+            string DireccionActual, 
+            string Ciudad, 
+            string SituacionLaboral);
     }
 }

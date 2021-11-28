@@ -11,11 +11,11 @@ namespace E_Migrant.App.Persistencia
         {
             this.appContext = appContext;
         }
-        Migrante IRepositorioConsultaGruposAmigosYFamiliares.addConsultaGruposAmigosYFamiliares(
+        ConsultaGruposAmigosYFamiliares IRepositorioConsultaGruposAmigosYFamiliares.addConsultaGruposAmigosYFamiliares(
         string Nombre,
-         string Apellidos,
-          string Telefono,
-          string direccionElectronica)
+        string Apellidos,
+        string Telefono,
+        string direccionElectronica)
         {
 
             try
@@ -43,9 +43,6 @@ namespace E_Migrant.App.Persistencia
             {
                 throw;
             }
-
-
         }
-
     }
 }

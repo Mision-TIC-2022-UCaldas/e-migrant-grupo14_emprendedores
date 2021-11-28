@@ -5,10 +5,11 @@ namespace E_Migrant.App.Persistencia
 {
     public interface IRepositorioConsultaHistorial
     {
-        ConsultaHistorial addConsultaHistorial(DateTime FechaSolicitud,
-         DateTime FechaAceptacionRechazo,
-         string DescripcionServicio,
-          string EntidadQueLoOfrece,
-           TipoEstado Estado);
+        ConsultaHistorial addConsultaHistorial(
+        DateTime FechaSolicitud,
+        DateTime FechaAceptacionRechazo,
+        string DescripcionServicio,
+        string EntidadQueLoOfrece,
+        TipoEstado Estado);
     }
 }

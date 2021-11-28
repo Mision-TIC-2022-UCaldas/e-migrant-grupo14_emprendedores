@@ -12,15 +12,15 @@ namespace E_Migrant.App.Persistencia
             this.appContext = appContext;
         }
         RegistroEntidad IRepositorioRegistrarEntidad.addRegistrarEntidad(
-        string RazonSocial,
-         string Nit,
-          string Direccion,
-           string Ciudad,
+            string RazonSocial,
+            string Nit,
+            string Direccion,
+            string Ciudad,
             string Telefono,
-             string DireccionElectronica,
-              string PaginaWeb,
-               TipoSector Sector,
-                TipoServicioOfrecido ServicioQueOfrece)
+            string DireccionElectronica,
+            string PaginaWeb,
+            TipoSector Sector,
+            TipoServicioOfrecido ServicioQueOfrece)
         {
 
             try

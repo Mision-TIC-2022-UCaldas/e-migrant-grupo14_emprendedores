@@ -5,9 +5,10 @@ namespace E_Migrant.App.Persistencia
 {
     public interface IRepositorioConsultaGruposAmigosYFamiliares
     {
-        ConsultaGrupoAmigosFamiliares addConsultaGruposAmigosYFamiliares(string Nombre,
-         string Apellidos,
-         string Telefono,
-         string DireccionElectronica);
+        ConsultaGrupoAmigosFamiliares addConsultaGruposAmigosYFamiliares(
+        string Nombre,
+        string Apellidos,
+        string Telefono,
+        string DireccionElectronica);
     }
 }

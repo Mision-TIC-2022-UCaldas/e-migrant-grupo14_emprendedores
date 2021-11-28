@@ -5,7 +5,7 @@ namespace E_Migrant.App.Persistencia
 {
     public interface IRepositorioRegistroOfertaServicio
     {
-        Migrante addRegistroOfertaServicio(
+        RegistroOfertaServicios addRegistroOfertaServicio(
             string NombreServicio,
             int NumeroMaximoMigrantes,
             DateTime InicioOfertaServicio,

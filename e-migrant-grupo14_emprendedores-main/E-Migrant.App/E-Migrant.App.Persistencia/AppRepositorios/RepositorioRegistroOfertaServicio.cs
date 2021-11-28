@@ -11,12 +11,12 @@ namespace E_Migrant.App.Persistencia
         {
             this.appContext = appContext;
         }
-        Migrante IRepositorioRegistroOfertaServicios.addRegistroOfertaServicio(
+        RegistroOfertaServicios IRepositorioRegistroOfertaServicios.addRegistroOfertaServicio(
             string NombreServicio,
-             int NumeroMaximoMigrantes,
-              DateTime InicioOfertaServicio,
-               DateTime FinOfertaServicio,
-                TipoEstadoServicio EstadoServicio)
+            int NumeroMaximoMigrantes,
+            DateTime InicioOfertaServicio,
+            DateTime FinOfertaServicio,
+            TipoEstadoServicio EstadoServicio)
         {
 
             try

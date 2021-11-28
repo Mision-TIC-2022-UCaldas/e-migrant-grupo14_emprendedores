@@ -12,11 +12,11 @@ namespace E_Migrant.App.Persistencia
             this.appContext = appContext;
         }
         ConsultaHistorial IRepositorioConsultaHistorial.addConsultaHistorial(
-            DateTime FechaSolicitud,
-         DateTime FechaAceptacionRechazo,
-          string DescripcionServicio,
-          string EntidadQueLoOfrece,
-           TipoEstado Estado)
+        DateTime FechaSolicitud,
+        DateTime FechaAceptacionRechazo,
+        string DescripcionServicio,
+        string EntidadQueLoOfrece,
+        TipoEstado Estado)
         {
 
             try
@@ -35,9 +35,9 @@ namespace E_Migrant.App.Persistencia
                         entidadQueLoOfrece = EntidadQueLoOfrece,
                         estado = Estado
                     };
-                    var datosmConsultaHistorialAlmacenadas = this.appContext.Migrante.Add(consultaHistorial);
+                    var datosConsultaHistorialAlmacenadas = this.appContext.Migrante.Add(consultaHistorial);
                     this.appContext.SaveChanges();
-                    return datosmConsultaHistorialAlmacenadas.Entity;
+                    return datosConsultaHistorialAlmacenadas.Entity;
                 }
 
             }
@@ -45,9 +45,6 @@ namespace E_Migrant.App.Persistencia
             {
                 throw;
             }
-
-
         }
-
     }
 }
