@@ -47,6 +47,7 @@ namespace E_Migrant.App.Persistencia
                     return DatosmIgranteAlmacenados.Entity;
                 }
 
+
             }
             catch(System.Exception)
             {
@@ -84,6 +85,37 @@ namespace E_Migrant.App.Persistencia
             return datosMigranteEncontrado;
             
         }
+        Migrante IRepositorioDatosMigrante.updateEmailMigrante(string email){
+            
+            var datosMigranteEncontrado = _appContext.Migrante.FirstOrDefault(M => M.correoElectronico == email);
+            
+            if(datosMigranteEncontrado.correoElectronico == null){
+                var DatosmIgrante = new Migrante {
+                    correoElectronico = email,
+                };
+                var DatosmIgranteAlmacenados= _appContext.Migrante.Add(DatosmIgrante);
+                _appContext.SaveChanges();
+                return DatosmIgranteAlmacenados.Entity;
+            }
+            return datosMigranteEncontrado;
+            
+        }
 
+        public IEnumerable<Migrante> GetAllMigrantes(){
+            return _appContext.Migrante;
+        }
+
+    public IEnumerable<Migrante> GetDatosMigrantesFiltro(string filtro){
+        var Migrantes = GetAllMigrantes();
+            if(Migrantes!=null){
+                if(!String.IsNullOrEmpty(filtro)){
+                    Migrantes = Migrantes.Where(M => M.numeroIdentificacion.Contains(filtro));
+                }
+            }
+            return Migrantes;
+    }
+    public Migrante GetMigranteid(int id){
+        return _appContext.Migrante.FirstOrDefault(M => M.id==id);
+    }
     }
 }

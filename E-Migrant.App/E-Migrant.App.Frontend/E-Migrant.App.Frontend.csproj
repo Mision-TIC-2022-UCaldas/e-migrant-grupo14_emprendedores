@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <ItemGroup>
     <ProjectReference Include="..\E-Migrant.App.Dominio\E-Migrant.App.Dominio.csproj" />
@@ -6,6 +6,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.Google" Version="5.0.0" />
     <PackageReference Include="Microsoft.AspNetCore.Authorization" Version="6.0.0" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="5.0.9" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="5.0.9" />
@@ -21,6 +22,7 @@
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
     <RootNamespace>E_Migrant.App.Frontend</RootNamespace>
+    <UserSecretsId>5df53b90-a537-40ef-aec4-c797c2002395</UserSecretsId>
   </PropertyGroup>
 
 </Project>

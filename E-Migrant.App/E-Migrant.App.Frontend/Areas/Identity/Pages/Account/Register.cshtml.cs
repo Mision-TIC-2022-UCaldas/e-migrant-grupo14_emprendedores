@@ -52,35 +52,7 @@ namespace E_Migrant.App.Frontend.Areas.Identity.Pages.Account
             [EmailAddress]
             [Display(Name = "Email")]
             public string Email { get; set; }
-            [Required]
-            [Display(Name = "nombre")]
-            public string nombre { get; set; }
 
-            [Required]
-            [Display(Name = "apellido")]
-            public string apellido { get; set; }
-            [Required]
-            [Display(Name = "TipoDocumento")]
-            public int TipoDocumento { get; set; }
-            [Required]
-            [Display(Name = "numeroDocumento")]
-            public string numeroDocumento { get; set; }
-            [Required]
-            [Display(Name = "pais")]
-            public string pais { get; set; }
-            [Display(Name = "DireccionActual")]
-            public string DireccionActual { get; set; }
-            [Display(Name = "numeroTelefonico")]
-            public string numeroTelefonico {get; set;}
-            [Display(Name = "situacionLaboral")]
-            
-            public string situacionLaboral { get; set; }
-            [Display(Name = "ciudad")]
-            public string ciudad { get; set; }
-            [Required]
-            
-            [Display(Name = "fechaNacimiento")]
-            public DateTime fechaNacimiento { get; set; }
 
             [Required]
             [StringLength(100, ErrorMessage = "The {0} must be at least {2} and at max {1} characters long.", MinimumLength = 4)]
@@ -108,7 +80,8 @@ namespace E_Migrant.App.Frontend.Areas.Identity.Pages.Account
             {
                 var user = new IdentityUser { UserName = Input.Email, Email = Input.Email };
                 var result = await _userManager.CreateAsync(user, Input.Password);
-                var DatosmIgrante = repositorioDatosMigrante.AddDatosMigrante(Input.nombre,Input.apellido,Input.TipoDocumento,Input.numeroDocumento, Input.pais, Input.fechaNacimiento, Input.Email,Input.numeroTelefonico, Input.DireccionActual, Input.ciudad, Input.situacionLaboral);
+                
+                
                 if (result.Succeeded)
                 {
                     _logger.LogInformation("User created a new account with password.");

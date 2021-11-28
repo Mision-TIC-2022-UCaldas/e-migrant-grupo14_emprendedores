@@ -1,0 +1,21 @@
+﻿@page
+
+@model E_Migrant.App.Frontend.Pages.DetallesMigrante.DetallesMigranteModel
+@{
+}
+<div class="container">
+    <h4> Id: @Model.migrante.id</h4>
+    <h4>nombre: @Model.migrante.nombre</h4>
+    <h4>apellidos: @Model.migrante.apellidos</h4>
+    <h4>Tipo Identificación: @Model.migrante.tipoIdentificacion</h4>
+    <h4>Número Identificación: @Model.migrante.numeroIdentificacion</h4>
+    <h4>País: @Model.migrante.pais</h4>
+    <h4>Fecha Nacimiento: @Model.migrante.fechaNacimiento</h4>
+    <h4> Dirección Actual:@Model.migrante.direccionActual</h4>
+    <h4> Email: @Model.migrante.correoElectronico</h4>
+    <h4> ciudad: @Model.migrante.ciudad</h4>
+    <h4> Situación Laboral: @Model.migrante.situacionLaboral</h4>
+    <h4> Numero Telefonico: @Model.migrante.numeroTelefonico</h4>
+    
+</div>
+<a asp-route-id="@Model.migrante.id" asp-page="../ActualizarDatosEntidad/ActualizarDatosEntidad" class="btn btn-primary">Editar</a>

@@ -13,5 +13,9 @@ namespace E_Migrant.App.Persistencia
          Migrante GetDatosMigranteCoreo(string correo);
 
          Migrante updateDatosmIgracion(Migrante migrante );
+         Migrante updateEmailMigrante(string email);
+         IEnumerable<Migrante> GetAllMigrantes();
+         IEnumerable<Migrante> GetDatosMigrantesFiltro(string filtro);
+         Migrante GetMigranteid(int id);
     }
 }

@@ -1,0 +1,42 @@
+﻿@page
+@model E_Migrant.App.Frontend.Pages.ListadoMigrante.ListadoMigranteModel
+@{
+}
+
+<form method="get" style="float: right">
+            <div class="form-group">
+                N.Identificación: <input type="text" name="Filtro" asp-for="Filtro" />
+                <input type="submit" value="Filtrar" />
+            </div>
+</form>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th >id</th>
+            <th>nombres</th>
+            <th>Apellidos</th>
+            <th>N.Identificaión</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+   @foreach (var migrante in Model.migrante)
+    {
+        <tr>
+            <td >@migrante.id</td>
+            <td>@migrante.nombre</td>
+            <td>@migrante.apellidos</td>
+            <td>@migrante.numeroIdentificacion</td>
+            
+            <th>
+                <a asp-route-id="@migrante.id" asp-page="../DetallesMigrante/DetallesMigrante">Detalle</a>
+            </th>
+            <th>
+                <a asp-route-id="@migrante.id" asp-page="../DetallesMigrante/DetallesMigrante">Agrupar</a>
+            </th>
+
+        </tr>
+    }
+
+</table>
+<a asp-page="../RegistroDatosMigrante/RegistroDatosMigra" class="btn btn-primary">Agregar Migrante</a>

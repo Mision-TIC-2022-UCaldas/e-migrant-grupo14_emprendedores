@@ -30,61 +30,7 @@
                 <input asp-for="Input.ConfirmPassword" class="form-control" />
                 <span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
             </div>
-            <div class="col-md-12">
-                <label for="nombre" class="form-label">nombres</label>
-                <input type="text" asp-for="Input.nombre" class="form-control" id="nombre"  required/>
-                <div class="invalid-feedback">Este campo es requerido</div>
-            </div>
-            <div class="col-md-12">
-                <label for="apellidos" class="form-label">Apellidos</label>
-                <input type="text" asp-for="Input.apellido" class="form-control" id="apellidos"  required />
-                <div class="invalid-feedback">Este campo es requerido</div>
-            </div>
-            <div class="col-md-12">
-                <label for="pais" class="form-label">País</label>
-                <input type="text" asp-for="Input.pais" class="form-control" id="pais" required />
-                <div class="invalid-feedback">Este campo es requerido</div>
-            </div>
-            <div class="col-md-6 mt-4">
-                    <select class= aria-label="Default select example" asp-for="Input.TipoDocumento" required>
-                        
-                        <option selected >Tipo Documento</option>
-                        <option value="0">Tarjeta identidad</option>
-                        <option value="1">cedula extranjeria</option>
-                        <option value="2">Pasaporte</option>
-                        <option value="3">otro</option>
-                    </select>
-                    <div class="invalid-feedback">Este campo es requerido</div>
-            </div>
-            <div class="col-md-6">
-                <label for="numeroDocumento" class="form-label">Identificación</label>
-                <input asp-for="Input.numeroDocumento" type="text" class="form-control" id="numeroIdentificacion"  required />
-                <div class="invalid-feedback">Este campo es requerido</div>
-            </div>
-            <div class="col-md-12">
-                <label for="ciudad" class="form-label">Ciudad</label>
-                <input asp-for="Input.ciudad" type="text" class="form-control" id="ciudad" />
-            </div>
-            <div class="col-md-12">
-                <label for="situacionLaboral" class="form-label">Situación laboral</label>
-                <input asp-for="Input.situacionLaboral" type="text" class="form-control" id="situacionLaboral"  />
-            </div>
-            <div class="col-md-12">
-                <label for="txtDireccionActual" class="form-label">Dirección Actual</label>
-                <input asp-for="Input.DireccionActual" type="text" class="form-control" id="txtDireccionActual"  />
-            </div>
-            
-            <div class="col-md-12">
-                <label for="txtCelular" class="form-label">Numero Telefonico</label>
-                <input type="text" asp-for="Input.numeroTelefonico"class="form-control" id="txtCelular" />
-            </div>
-            <div class="col-md-12">
-                <label for="fechaNacimiento" class="form-label">Fecha Nacimiento</label>
-                <input asp-for="Input.fechaNacimiento" type="text" class="form-control" />
-                <span class="text-danger" asp-validation-for="Input.fechaNacimiento"></span>
-
-            </div>
-            <button type="submit" class="btn btn-primary">Register</button>
+                        <button type="submit" class="btn btn-primary">Register</button>
         </form>
     </div>
     <div class="col-md-6 col-md-offset-2">
