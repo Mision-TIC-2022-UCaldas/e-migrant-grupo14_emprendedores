@@ -10,7 +10,55 @@
             
             <div class="col-md-12">
                 <label asp-for="datosEntidadesColaboradoras.razonSocial" class="form-label"></label>
-                <input type="text" class="form-control" asp-for="datosEntidadesColaboradoras.razonSocial" />
+                <input type="text" class="form-control" asp-for="datosEntidadesColaboradoras.razonSocial"required />
+            </div>
+            <div class="col-md-12">
+                <label asp-for="datosEntidadesColaboradoras.nit" class="form-label"></label>
+                <input type="text" class="form-control" asp-for="datosEntidadesColaboradoras.nit"required />
+            </div>
+            <div class="col-md-12">
+                <label asp-for="datosEntidadesColaboradoras.direccion" class="form-label"></label>
+                <input type="text" class="form-control" asp-for="datosEntidadesColaboradoras.direccion" required/>
+            </div>
+            <div class="col-md-12">
+                <label asp-for="datosEntidadesColaboradoras.ciudad" class="form-label"></label>
+                <input type="text" class="form-control" asp-for="datosEntidadesColaboradoras.ciudad" required />
+            </div>
+            <div class="col-md-12">
+                <label asp-for="datosEntidadesColaboradoras.Telefono" class="form-label"></label>
+                <input type="text" class="form-control" asp-for="datosEntidadesColaboradoras.Telefono" required/>
+            </div>
+            <div class="col-md-12">
+                <label asp-for="datosEntidadesColaboradoras.correoElectronico" class="form-label"></label>
+                <input type="text" class="form-control" asp-for="datosEntidadesColaboradoras.correoElectronico" />
+            </div>
+            <div class="col-md-12">
+                <label asp-for="datosEntidadesColaboradoras.paginaWeb" class="form-label"></label>
+                <input type="text" class="form-control" asp-for="datosEntidadesColaboradoras.paginaWeb" />
+            </div>
+            
+            <div class="col-md-6 mt-4">
+                    <select class= aria-label="Default select example" asp-for="datosEntidadesColaboradoras.serviciosOfrece" required>
+                        <option selected >Tipo Servicio</option>
+                        <option value="1">Salud</option>
+                        <option value="2">Jurídicosa</option>
+                        <option value="3">Comida preparada</option>
+                        <option value="4">Empleo</option>
+                        <option value="5">Alojamiento temporal</option>
+                        <option value="6">Alojamiento permanente</option>
+                        <option value="7">Educación</option>
+                    </select>
+            </div>
+            <div class="col-md-6 mt-4">
+                    <select class= aria-label="Default select example" asp-for="datosEntidadesColaboradoras.sector" required>
+                        <option selected >sector</option>
+                        <option value="0">Publico</option>
+                        <option value="1">Privado</option>
+                        <option value="2">Sin ánimo de lucro</option>
+                        <option value="3">No gubernamenta</option>
+                        <option value="4">Otro</option>
+                    </select>
+            </div>
             <!--</div>
             <div class="col-md-12">
                 <label asp-for="migrante.apellidos" class="form-label"></label>
