@@ -34,7 +34,7 @@ namespace E_Migrant.App.Frontend.Pages.MisDatosMigrante
             }
             else
             {
-                
+    
                 migrante= new Migrante();
             }
             // migrante= _repoMigrante.GetDatosMigranteCoreo(correo);

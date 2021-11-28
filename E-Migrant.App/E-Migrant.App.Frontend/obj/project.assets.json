@@ -2171,6 +2171,9 @@
       "E-Migrant.App.Dominio/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "System.ComponentModel.Annotations": "5.0.0"
+        },
         "compile": {
           "bin/placeholder/E-Migrant.App.Dominio.dll": {}
         },
@@ -7614,7 +7617,8 @@
       "Microsoft.AspNetCore.Identity.UI >= 5.0.9",
       "Microsoft.EntityFrameworkCore.Design >= 5.0.0",
       "Microsoft.EntityFrameworkCore.SqlServer >= 5.0.9",
-      "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 5.0.2"
+      "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 5.0.2",
+      "System.ComponentModel.Annotations >= 5.0.0"
     ]
   },
   "packageFolders": {
@@ -7696,6 +7700,10 @@
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
             "target": "Package",
             "version": "[5.0.2, )"
+          },
+          "System.ComponentModel.Annotations": {
+            "target": "Package",
+            "version": "[5.0.0, )"
           }
         },
         "imports": [

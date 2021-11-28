@@ -5,4 +5,8 @@
     <RootNamespace>E_Migrant.App.Dominio</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="System.ComponentModel.Annotations" Version="5.0.0" />
+  </ItemGroup>
+
 </Project>
