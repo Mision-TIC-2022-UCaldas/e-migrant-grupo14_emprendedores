@@ -1523,6 +1523,9 @@
       "E-Migrant.App.Dominio/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "System.ComponentModel.Annotations": "5.0.0"
+        },
         "compile": {
           "bin/placeholder/E-Migrant.App.Dominio.dll": {}
         },

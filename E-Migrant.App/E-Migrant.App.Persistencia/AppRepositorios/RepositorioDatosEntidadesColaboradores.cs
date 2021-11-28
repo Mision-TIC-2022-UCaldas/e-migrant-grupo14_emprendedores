@@ -20,5 +20,13 @@ namespace E_Migrant.App.Persistencia
             _appContext.SaveChanges();
             return EntidadDatosAlmacenados.Entity;
         }
+        Boolean IRepositorioDatosEntidadesColaboradoras.GetDatosEntidadNit(string nit){
+            var EntidadEncontrada = _appContext.DatosEntidadesColaboradoras.FirstOrDefault(E => E.nit==nit);
+            if(EntidadEncontrada==null){
+                return false;
+            }{
+                return true;
+            }
+        }
     }
 }

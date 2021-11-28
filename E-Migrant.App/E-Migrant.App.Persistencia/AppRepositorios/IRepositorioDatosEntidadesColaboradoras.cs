@@ -8,7 +8,7 @@ namespace E_Migrant.App.Persistencia
          DatosEntidadesColaboradoras AddDatosEntidades(DatosEntidadesColaboradoras datosEntidadesColaboradoras);
          //DatosEntidadesColaboradoras MisDatosEntidades(string CorreoElectronico);
 
-         //DatosEntidadesColaboradoras GetDatosMigranteCoreo(string correo);
+         Boolean GetDatosEntidadNit(string nit);
 
          //Migrante updateDatosmIgracion(Migrante migrante );
     }

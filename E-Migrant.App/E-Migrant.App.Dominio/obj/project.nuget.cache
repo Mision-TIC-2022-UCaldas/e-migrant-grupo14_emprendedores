@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "0dW8kC+h7NaSQWzaNzrj/Q5Ubf5D1eqIgoAtCTBCjjpScWFzwbQ3f57i+8zRIFNwVhccTyVIzaSZPENge1uKyw==",
+  "dgSpecHash": "4uXHRqF2h4UlFqYNrbC3cEbgE1Gwj6pdYU+gzfH0q/PuqzsDkDXdgXMAMQ09mwwplqQHgk8Z7ymuhV1Yh3vMGQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Exneider\\Desktop\\Hackaton\\e-migrant-grupo14_emprendedores\\E-Migrant.App\\E-Migrant.App.Dominio\\E-Migrant.App.Dominio.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Exneider\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

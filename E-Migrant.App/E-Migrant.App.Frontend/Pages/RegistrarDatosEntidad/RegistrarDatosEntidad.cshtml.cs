@@ -19,24 +19,38 @@ namespace E_Migrant.App.Frontend
         public DatosEntidadesColaboradoras datosEntidadesColaboradoras { get; set; }
         public IActionResult OnPost(DatosEntidadesColaboradoras datosEntidadesColaboradoras)
         {
-            if (datosEntidadesColaboradoras.serviciosOfrece == "Tipo Servicio" || datosEntidadesColaboradoras.sector == "sector")
+            var DatosEntidadEncontrado = _repoDatosEnti.GetDatosEntidadNit(datosEntidadesColaboradoras.nit);
+
+            if (!ModelState.IsValid)
             {
-                return RedirectToPage("../Error");
+                return Page();
             }
             else
             {
-                var adicionando = _repoDatosEnti.AddDatosEntidades(datosEntidadesColaboradoras);
-                if (adicionando == null)
+                if (DatosEntidadEncontrado)
                 {
                     return RedirectToPage("../Error");
-                }
-                else
+                }else
                 {
-                    datosEntidadesColaboradoras = adicionando;
-                    return RedirectToPage("../index");
-                }
-            }
+                    var adicionando = _repoDatosEnti.AddDatosEntidades(datosEntidadesColaboradoras);
+                    if (adicionando == null)
+                    {
+                        return RedirectToPage("../Error");
+                    }
+                    else
+                    {
+                        datosEntidadesColaboradoras = adicionando;
 
+                    }
+                }
+
+                return RedirectToPage("../index");
+            }
         }
     }
+
+
+
+
+
 }
