@@ -10,6 +10,7 @@ namespace E_Migrant.App.Persistencia
 
          Boolean GetDatosEntidadNit(string nit);
 
-         //Migrante updateDatosmIgracion(Migrante migrante );
+         IEnumerable<DatosEntidadesColaboradoras> GetAllEntidades();
+         IEnumerable<DatosEntidadesColaboradoras> GetDatosEntidadNitFiltro(string filtro);
     }
 }

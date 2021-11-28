@@ -3,7 +3,6 @@ using E_Migrant.App.Dominio;
 using System.Collections.Generic;
 using System.Linq;
 using Microsoft.EntityFrameworkCore;
-using E_Migrant.App.Persistencia;
 namespace E_Migrant.App.Persistencia
 {
     public class RepositorioDatosEntidadesColaboradores : IRepositorioDatosEntidadesColaboradoras
@@ -28,5 +27,20 @@ namespace E_Migrant.App.Persistencia
                 return true;
             }
         }
+        public IEnumerable<DatosEntidadesColaboradoras> GetAllEntidades(){
+            return _appContext.DatosEntidadesColaboradoras;
+        }
+        public IEnumerable<DatosEntidadesColaboradoras> GetDatosEntidadNitFiltro(string filtro=null){
+            
+            var Entidades = GetAllEntidades();
+            if(Entidades!=null){
+                if(!String.IsNullOrEmpty(filtro)){
+                    Entidades = Entidades.Where(E => E.nit.Contains(filtro));
+                }
+            }
+            return Entidades;
+        }
+
+        
     }
 }
