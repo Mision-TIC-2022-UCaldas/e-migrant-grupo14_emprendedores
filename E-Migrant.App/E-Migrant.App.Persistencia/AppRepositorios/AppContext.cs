@@ -5,6 +5,7 @@ namespace E_Migrant.App.Persistencia
     public class AppContext : DbContext
     {
         public DbSet<Migrante> Migrante {get; set;}
+        public DbSet<DatosEntidadesColaboradoras> DatosEntidadesColaboradoras {get; set;}
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
