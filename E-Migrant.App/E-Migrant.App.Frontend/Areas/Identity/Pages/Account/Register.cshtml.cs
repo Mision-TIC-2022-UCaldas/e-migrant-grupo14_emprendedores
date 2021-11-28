@@ -78,9 +78,9 @@ namespace E_Migrant.App.Frontend.Areas.Identity.Pages.Account
             [Display(Name = "ciudad")]
             public string ciudad { get; set; }
             [Required]
+            
             [Display(Name = "fechaNacimiento")]
             public DateTime fechaNacimiento { get; set; }
-
 
             [Required]
             [StringLength(100, ErrorMessage = "The {0} must be at least {2} and at max {1} characters long.", MinimumLength = 4)]

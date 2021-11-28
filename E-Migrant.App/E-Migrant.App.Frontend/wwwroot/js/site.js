@@ -32,4 +32,5 @@
     }else{
         tipo.type = "password";
     }
+    
 }

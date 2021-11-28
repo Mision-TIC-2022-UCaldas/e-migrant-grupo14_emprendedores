@@ -65,6 +65,7 @@ namespace E_Migrant.App.Persistencia
             return _appContext.Migrante.FirstOrDefault(M => M.correoElectronico==correo);
         }
         Migrante IRepositorioDatosMigrante.updateDatosmIgracion(Migrante migrante){
+            
             var datosMigranteEncontrado = _appContext.Migrante.FirstOrDefault(M => M.id==migrante.id);
             if(datosMigranteEncontrado!=null){
                 datosMigranteEncontrado.nombre= migrante.nombre;
