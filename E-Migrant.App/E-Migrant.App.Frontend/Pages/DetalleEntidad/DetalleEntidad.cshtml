@@ -1,0 +1,18 @@
+﻿@page
+@model E_Migrant.App.Frontend.Pages.DetalleEntidadModel.DetalleEntidadModel
+@{
+}
+<div class="container">
+    <h4> Id: @Model.datosEntidadesColaboradoras.id</h4></label>
+    <h4>NIT: @Model.datosEntidadesColaboradoras.nit</h4>
+    <h4>Razón social: @Model.datosEntidadesColaboradoras.razonSocial</h4>
+    <h4>Dirección: @Model.datosEntidadesColaboradoras.direccion</h4>
+    <h4>Teléfono: @Model.datosEntidadesColaboradoras.Telefono</h4>
+    <h4>Ciudad: @Model.datosEntidadesColaboradoras.ciudad</h4>
+    <h4>Email: @Model.datosEntidadesColaboradoras.correoElectronico</h4>
+    <h4> Página Web:@Model.datosEntidadesColaboradoras.paginaWeb</h4>
+    <h4> Sector: @Model.datosEntidadesColaboradoras.sector</h4>
+    <h4> Oferta de Servicio: @Model.datosEntidadesColaboradoras.serviciosOfrece</h4>
+    
+</div>
+<a asp-route-nit="@Model.datosEntidadesColaboradoras.nit" asp-page="../ActualizarDatosEntidad/ActualizarDatosEntidad" class="btn btn-primary">Editar</a>

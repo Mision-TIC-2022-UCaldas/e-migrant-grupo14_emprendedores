@@ -17,12 +17,10 @@
             <th>Razon Social</th>
             <th>NIT</th>
             <th>Dirección</th>
-            <th>Telefono</th>
-            <th>email</th>
-            <th>Pagina web</th>
             <th>ciudad</th>
             <th>Sector</th>
             <th>Tipo Servicio</th>
+            <th>Acciones</th>
         </tr>
     </thead>
    @foreach (var entidad in Model.datosEntidadesColaboradoras)
@@ -32,12 +30,13 @@
             <td>@entidad.razonSocial</td>
             <td>@entidad.nit</td>
             <td>@entidad.direccion</td>
-            <td>@entidad.Telefono</td>
-            <td>@entidad.correoElectronico</td>
-            <td>@entidad.paginaWeb</td>
             <td>@entidad.ciudad</td>
             <td>@entidad.sector</td>
             <td>@entidad.serviciosOfrece</td>
+            <th>
+                <a asp-route-nit="@entidad.nit" asp-page="../DetalleEntidad/DetalleEntidad">Detalle</a>
+            </th>
+
         </tr>
     }
 

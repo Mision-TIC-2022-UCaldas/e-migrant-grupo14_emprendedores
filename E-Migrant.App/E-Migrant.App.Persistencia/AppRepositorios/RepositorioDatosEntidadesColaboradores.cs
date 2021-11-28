@@ -19,13 +19,17 @@ namespace E_Migrant.App.Persistencia
             _appContext.SaveChanges();
             return EntidadDatosAlmacenados.Entity;
         }
-        Boolean IRepositorioDatosEntidadesColaboradoras.GetDatosEntidadNit(string nit){
+        public Boolean  GetDatosEntidadNit(string nit){
             var EntidadEncontrada = _appContext.DatosEntidadesColaboradoras.FirstOrDefault(E => E.nit==nit);
             if(EntidadEncontrada==null){
                 return false;
             }{
                 return true;
             }
+        }
+        public DatosEntidadesColaboradoras  GetDatosDeLaEntidad(string nit){
+
+            return _appContext.DatosEntidadesColaboradoras.FirstOrDefault(E => E.nit==nit);
         }
         public IEnumerable<DatosEntidadesColaboradoras> GetAllEntidades(){
             return _appContext.DatosEntidadesColaboradoras;
@@ -41,6 +45,20 @@ namespace E_Migrant.App.Persistencia
             return Entidades;
         }
 
-        
+        public DatosEntidadesColaboradoras updateDatosEntidad(DatosEntidadesColaboradoras datosEntidadesColaboradoras){
+            var DatosEntidadEncontrada= _appContext.DatosEntidadesColaboradoras.FirstOrDefault(E => E.nit== datosEntidadesColaboradoras.nit);
+            if(DatosEntidadEncontrada != null){
+                DatosEntidadEncontrada.razonSocial = datosEntidadesColaboradoras.razonSocial;
+                DatosEntidadEncontrada.direccion = datosEntidadesColaboradoras.direccion;
+                DatosEntidadEncontrada.ciudad = datosEntidadesColaboradoras.ciudad;
+                DatosEntidadEncontrada.Telefono = datosEntidadesColaboradoras.Telefono;
+                DatosEntidadEncontrada.correoElectronico= datosEntidadesColaboradoras.correoElectronico;
+                DatosEntidadEncontrada.sector = datosEntidadesColaboradoras.sector;
+                DatosEntidadEncontrada.serviciosOfrece =datosEntidadesColaboradoras.serviciosOfrece;
+                DatosEntidadEncontrada.paginaWeb= datosEntidadesColaboradoras.paginaWeb; 
+                _appContext.SaveChanges();
+            }
+            return DatosEntidadEncontrada;
+        }
     }
 }

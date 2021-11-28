@@ -1,0 +1,77 @@
+﻿@page
+@model E_Migrant.App.Frontend.Pages.ActualizarDatosEntidadModel.ActualizarDatosEntidadModel
+@{
+}
+<div class="container m-md-4">
+
+    <div class="card col-md-5 p-md-5 container">
+        <h4 class="card-title text-center m-2">Registro Entidades Colaboradoras</h4>
+        <form class="row g-3 needs-validation" method="post" novalidate>
+
+            <div class="col-md-12">
+                <label asp-for="datosEntidadesColaboradoras.razonSocial" class="form-label"></label>
+                <input type="text" class="form-control" asp-for="@Model.datosEntidadesColaboradoras.razonSocial" />
+                <span class="text-danger" asp-validation-for="datosEntidadesColaboradoras.razonSocial"></span>
+            </div>
+            <div class="col-md-12">
+                <label asp-for="datosEntidadesColaboradoras.nit" class="form-label"></label>
+                <input type="text" class="form-control" asp-for="datosEntidadesColaboradoras.nit" />
+                <span class="text-danger" asp-validation-for="datosEntidadesColaboradoras.nit"></span>
+            </div>
+            <div class="col-md-12">
+                <label asp-for="datosEntidadesColaboradoras.direccion" class="form-label"></label>
+                <input type="text" class="form-control" asp-for="datosEntidadesColaboradoras.direccion" />
+                <span class="text-danger" asp-validation-for="datosEntidadesColaboradoras.direccion"></span>
+            </div>
+            <div class="col-md-12">
+                <label asp-for="datosEntidadesColaboradoras.ciudad" class="form-label"></label>
+                <input type="text" class="form-control" asp-for="datosEntidadesColaboradoras.ciudad" />
+                <span class="text-danger" asp-validation-for="datosEntidadesColaboradoras.ciudad"></span>
+            </div>
+            <div class="col-md-12">
+                <label asp-for="datosEntidadesColaboradoras.Telefono" class="form-label"></label>
+                <input type="text" class="form-control" asp-for="datosEntidadesColaboradoras.Telefono" />
+                <span class="text-danger" asp-validation-for="datosEntidadesColaboradoras.Telefono"></span>
+            </div>
+            <div class="col-md-12">
+                <label asp-for="datosEntidadesColaboradoras.correoElectronico" class="form-label"></label>
+                <input type="email" class="form-control" asp-for="datosEntidadesColaboradoras.correoElectronico" />
+            </div>
+            <div class="col-md-12">
+                <label asp-for="datosEntidadesColaboradoras.paginaWeb" class="form-label"></label>
+                <input type="text" class="form-control" asp-for="datosEntidadesColaboradoras.paginaWeb" />
+
+            </div>
+
+            <div class="col-md-6 mt-4">
+                <select class=aria-label="Default select example" asp-for="datosEntidadesColaboradoras.serviciosOfrece">
+                    <option selected value="">Tipo Servicio</option>
+                    <option value="1">Salud</option>
+                    <option value="2">Jurídicosa</option>
+                    <option value="3">Comida preparada</option>
+                    <option value="4">Empleo</option>
+                    <option value="5">Alojamiento temporal</option>
+                    <option value="6">Alojamiento permanente</option>
+                    <option value="7">Educación</option>
+                </select>
+                <span class="text-danger" asp-validation-for="datosEntidadesColaboradoras.serviciosOfrece"></span>
+            </div>
+            <div class="col-md-6 mt-4">
+                <select class=aria-label="Default select example" asp-for="datosEntidadesColaboradoras.sector">
+                    <option selected value="">sector</option>
+                    <option value="0">Publico</option>
+                    <option value="1">Privado</option>
+                    <option value="2">Sin ánimo de lucro</option>
+                    <option value="3">No gubernamenta</option>
+                    <option value="4">Otro</option>
+                </select>
+                <span class="text-danger" asp-validation-for="datosEntidadesColaboradoras.sector"></span>
+                <div class="col-12 mx-auto mt-2">
+                    <button class="btn btn-primary" type="submit">Actualizar</button>
+                </div>
+
+            </div>
+        </form>
+
+    </div>
+</div>

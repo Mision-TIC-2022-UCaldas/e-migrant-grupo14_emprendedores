@@ -55,6 +55,7 @@ namespace E_Migrant.App.Persistencia
 
             
         }
+    
         Migrante IRepositorioDatosMigrante.Misdatos(string CorreoElectronico){
         var DatosmIgrante = new Migrante{correoElectronico = CorreoElectronico};
         var DatosmIgranteAlmacenados= _appContext.Migrante.Add(DatosmIgrante);

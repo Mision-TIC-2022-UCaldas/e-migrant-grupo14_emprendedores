@@ -177,3 +177,5 @@ C:\Users\Exneider\Desktop\Hackaton\e-migrant-grupo14_emprendedores\E-Migrant.App
 C:\Users\Exneider\Desktop\Hackaton\e-migrant-grupo14_emprendedores\E-Migrant.App\E-Migrant.App.Frontend\obj\Debug\net5.0\E-Migrant.App.Frontend.csproj.CopyComplete
 C:\Users\Exneider\Desktop\Hackaton\e-migrant-grupo14_emprendedores\E-Migrant.App\E-Migrant.App.Frontend\obj\Debug\net5.0\E-Migrant.App.Frontend.genruntimeconfig.cache
 C:\Users\Exneider\Desktop\Hackaton\e-migrant-grupo14_emprendedores\E-Migrant.App\E-Migrant.App.Frontend\obj\Debug\net5.0\E-Migrant.App.Frontend.csproj.AssemblyReference.cache
+C:\Users\Exneider\Desktop\Hackaton\e-migrant-grupo14_emprendedores\E-Migrant.App\E-Migrant.App.Frontend\obj\Debug\net5.0\Razor\Pages\DetalleEntidad\DetalleEntidad.cshtml.g.cs
+C:\Users\Exneider\Desktop\Hackaton\e-migrant-grupo14_emprendedores\E-Migrant.App\E-Migrant.App.Frontend\obj\Debug\net5.0\Razor\Pages\ActualizarDatosEntidad\ActualizarDatosEntidad.cshtml.g.cs
