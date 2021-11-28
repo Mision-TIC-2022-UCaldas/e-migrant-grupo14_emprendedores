@@ -11,10 +11,8 @@ namespace E_Migrant.App.Persistencia
         {
             this.appContext = appContext;
         }
-        ConsultaServicios IRepositorioConsultaServicios.addConsultaServicios(
-            int Total,
-            DateTime FechaInicioServicio,
-            TipoEstadoServicio EstadoServicio)
+        ConsultaServicios IRepositorioConsultaServicios.addConsultaServicios(int Total, DateTime FechaInicioServicio, TipoEstadoConsultaServicios EstadoServicio)
+       
         {
 
             try
@@ -27,11 +25,11 @@ namespace E_Migrant.App.Persistencia
                 {
                     var consultaServicios = new ConsultaServicios
                     {
-                        Total = Total,
-                        FechaInicioServicio = FechaInicioServicio,
-                        EstadoServicio = EstadoServicio
+                        total = Total,
+                        fechaInicioServicio = FechaInicioServicio,
+                        estadoConsultaServicio = EstadoServicio
                     };
-                    var datosconsultaServicios = this.appContext.Migrante.Add(consultaServicios);
+                    var datosconsultaServicios = this.appContext.ConsultaServicios.Add(consultaServicios);
                     this.appContext.SaveChanges();
                     return datosconsultaServicios.Entity;
                 }

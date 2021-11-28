@@ -1,7 +1,7 @@
 using System;
 namespace E_Migrant.App.Dominio
 {
-    public class ConsultarHistorial
+    public class ConsultaGrupoAmigosFamiliares
     {
         public string nombre { get; set; }
         public string apellidos { get; set; }

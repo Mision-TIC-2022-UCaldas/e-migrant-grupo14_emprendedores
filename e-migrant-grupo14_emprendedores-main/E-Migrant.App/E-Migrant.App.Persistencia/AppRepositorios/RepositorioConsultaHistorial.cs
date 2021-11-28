@@ -35,7 +35,7 @@ namespace E_Migrant.App.Persistencia
                         entidadQueLoOfrece = EntidadQueLoOfrece,
                         estado = Estado
                     };
-                    var datosConsultaHistorialAlmacenadas = this.appContext.Migrante.Add(consultaHistorial);
+                    var datosConsultaHistorialAlmacenadas = this.appContext.ConsultaHistorial.Add(consultaHistorial);
                     this.appContext.SaveChanges();
                     return datosConsultaHistorialAlmacenadas.Entity;
                 }

@@ -43,7 +43,7 @@ namespace E_Migrant.App.Persistencia
                         sector = Sector,
                         servicioQueOfrece = ServicioQueOfrece
                     };
-                    var datosRegistroEntidad = this.appContext.Migrante.Add(registroEntidad);
+                    var datosRegistroEntidad = this.appContext.RegistroEntidad.Add(registroEntidad);
                     this.appContext.SaveChanges();
                     return datosRegistroEntidad.Entity;
                 }

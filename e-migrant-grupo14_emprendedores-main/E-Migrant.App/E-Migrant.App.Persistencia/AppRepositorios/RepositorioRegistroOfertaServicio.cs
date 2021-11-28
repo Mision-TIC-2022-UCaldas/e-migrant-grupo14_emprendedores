@@ -5,13 +5,13 @@ namespace E_Migrant.App.Persistencia
     public class RepositorioRegistroOfertaServicio : IRepositorioRegistroOfertaServicio
     {
 
-        private readonly AppContext appContext;
+        private readonly AppContext _appContext;
 
-        public RepositorioRegistroOfertaServicios(AppContext appContext)
+        public RepositorioRegistroOfertaServicio(AppContext appContext)
         {
-            this.appContext = appContext;
+            _appContext = appContext;
         }
-        RegistroOfertaServicios IRepositorioRegistroOfertaServicios.addRegistroOfertaServicio(
+        RegistroOfertaServicios IRepositorioRegistroOfertaServicio.addRegistroOfertaServicio(
             string NombreServicio,
             int NumeroMaximoMigrantes,
             DateTime InicioOfertaServicio,
@@ -35,8 +35,8 @@ namespace E_Migrant.App.Persistencia
                         finOfertaServicio = FinOfertaServicio,
                         estadoServicio = EstadoServicio
                     };
-                    var datosRegistroOfertaServicios = this.appContext.Migrante.Add(registroOfertaServicios);
-                    this.appContext.SaveChanges();
+                    var datosRegistroOfertaServicios = _appContext.RegistroOfertaServicios.Add(registroOfertaServicios);
+                    _appContext.SaveChanges();
                     return datosRegistroOfertaServicios.Entity;
                 }
 

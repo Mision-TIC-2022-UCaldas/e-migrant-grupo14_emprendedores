@@ -8,7 +8,7 @@ namespace E_Migrant.App.Persistencia
         ConsultaServicios addConsultaServicios(
         int Total,
         DateTime FechaInicioServicio,
-        TipoEstadoServicio EstadoServicio
+        TipoEstadoConsultaServicios EstadoServicio
         );
     }
 }

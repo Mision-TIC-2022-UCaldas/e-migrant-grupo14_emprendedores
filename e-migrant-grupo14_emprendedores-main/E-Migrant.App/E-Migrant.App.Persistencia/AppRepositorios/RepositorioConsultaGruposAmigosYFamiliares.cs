@@ -11,11 +11,11 @@ namespace E_Migrant.App.Persistencia
         {
             this.appContext = appContext;
         }
-        ConsultaGruposAmigosYFamiliares IRepositorioConsultaGruposAmigosYFamiliares.addConsultaGruposAmigosYFamiliares(
+        ConsultaGrupoAmigosFamiliares IRepositorioConsultaGruposAmigosYFamiliares.addConsultaGruposAmigosYFamiliares(
         string Nombre,
         string Apellidos,
         string Telefono,
-        string direccionElectronica)
+        string DireccionElectronica)
         {
 
             try
@@ -26,14 +26,14 @@ namespace E_Migrant.App.Persistencia
                 }
                 else
                 {
-                    var consultaGruposAmigosYFamiliares = new ConsultaGruposAmigosYFamiliares
+                    var consultaGruposAmigosYFamiliares = new ConsultaGrupoAmigosFamiliares
                     {
                         nombre = Nombre,
                         apellidos = Apellidos,
                         telefono = Telefono,
                         direccionElectronica = DireccionElectronica
                     };
-                    var datosmConsultaGruposAmigosYFamiliares = this.appContext.Migrante.Add(consultaGruposAmigosYFamiliares);
+                    var datosmConsultaGruposAmigosYFamiliares = this.appContext.ConsultaGrupoAmigosFamiliares.Add(consultaGruposAmigosYFamiliares);
                     this.appContext.SaveChanges();
                     return datosmConsultaGruposAmigosYFamiliares.Entity;
                 }
