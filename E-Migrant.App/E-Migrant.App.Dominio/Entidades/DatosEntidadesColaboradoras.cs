@@ -8,7 +8,6 @@ namespace E_Migrant.App.Dominio{
 
         [Required]        
         public string razonSocial {get; set;}
-        [Required] 
         public string nit {get; set;}
         [Required] 
         public string direccion {get; set;}

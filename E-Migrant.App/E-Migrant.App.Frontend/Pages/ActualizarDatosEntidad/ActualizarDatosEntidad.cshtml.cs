@@ -16,16 +16,15 @@ namespace E_Migrant.App.Frontend.Pages.ActualizarDatosEntidadModel
         private static IRepositorioDatosEntidadesColaboradoras _repoDatosEnti = new RepositorioDatosEntidadesColaboradores(new Persistencia.AppContext());
         public DatosEntidadesColaboradoras datosEntidadesColaboradoras { get; set; }
 
-        public IActionResult OnGet(string nit)
+        public IActionResult OnGet(int id)
         {
 
-            if (nit != "")
+            if (id != 0)
             {
-                datosEntidadesColaboradoras = _repoDatosEnti.GetDatosDeLaEntidad(nit);
+                datosEntidadesColaboradoras = _repoDatosEnti.GetDatosDeLaEntidadId(id);
             }
             else
             {
-
                 datosEntidadesColaboradoras= new DatosEntidadesColaboradoras();
             }
             // migrante= _repoMigrante.GetDatosMigranteCoreo(correo);
@@ -43,16 +42,17 @@ namespace E_Migrant.App.Frontend.Pages.ActualizarDatosEntidadModel
             if (ModelState.IsValid)
             {
 
-                if (datosEntidadesColaboradoras.nit == "")
+                if (datosEntidadesColaboradoras.id > 0)
                 {
                     _repoDatosEnti.updateDatosEntidad(datosEntidadesColaboradoras);
                 }
-                return Page();
+                return RedirectToPage("../Index");
             }
             else
             {
                 return RedirectToPage("../Error");
             }
         }
+        
     }
 }

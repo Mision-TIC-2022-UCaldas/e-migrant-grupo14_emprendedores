@@ -14,5 +14,6 @@ namespace E_Migrant.App.Persistencia
          IEnumerable<DatosEntidadesColaboradoras> GetDatosEntidadNitFiltro(string filtro);
          DatosEntidadesColaboradoras  GetDatosDeLaEntidad(string nit);
          DatosEntidadesColaboradoras updateDatosEntidad(DatosEntidadesColaboradoras datosEntidadesColaboradoras);
+         DatosEntidadesColaboradoras  GetDatosDeLaEntidadId(int id);
     }
 }

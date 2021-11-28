@@ -31,6 +31,10 @@ namespace E_Migrant.App.Persistencia
 
             return _appContext.DatosEntidadesColaboradoras.FirstOrDefault(E => E.nit==nit);
         }
+        public DatosEntidadesColaboradoras  GetDatosDeLaEntidadId(int id){
+
+            return _appContext.DatosEntidadesColaboradoras.FirstOrDefault(E => E.id==id);
+        }
         public IEnumerable<DatosEntidadesColaboradoras> GetAllEntidades(){
             return _appContext.DatosEntidadesColaboradoras;
         }
@@ -46,7 +50,7 @@ namespace E_Migrant.App.Persistencia
         }
 
         public DatosEntidadesColaboradoras updateDatosEntidad(DatosEntidadesColaboradoras datosEntidadesColaboradoras){
-            var DatosEntidadEncontrada= _appContext.DatosEntidadesColaboradoras.FirstOrDefault(E => E.nit== datosEntidadesColaboradoras.nit);
+            var DatosEntidadEncontrada= _appContext.DatosEntidadesColaboradoras.FirstOrDefault(E => E.id== datosEntidadesColaboradoras.id);
             if(DatosEntidadEncontrada != null){
                 DatosEntidadEncontrada.razonSocial = datosEntidadesColaboradoras.razonSocial;
                 DatosEntidadEncontrada.direccion = datosEntidadesColaboradoras.direccion;
