@@ -6,7 +6,6 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using E_Migrant.App.Frontend.Areas.Identity.Data;
 
 namespace E_Migrant.App.Frontend.Areas.Identity.Pages.Account.Manage
 {
@@ -36,21 +35,21 @@ namespace E_Migrant.App.Frontend.Areas.Identity.Pages.Account.Manage
             [Phone]
             [Display(Name = "Phone number")]
             public string PhoneNumber { get; set; }
-            public string Ciudad { get; set; }
+            // public string Ciudad { get; set; }
         }
 
         private async Task LoadAsync(IdentityUser user)
         {
             var userName = await _userManager.GetUserNameAsync(user);
             var phoneNumber = await _userManager.GetPhoneNumberAsync(user);
-            var ciudad = await _userManager.GetCiudadAsync(user);
+            // var ciudad = await _userManager.GetCiudadAsync(user);
 
             Username = userName;
 
             Input = new InputModel
             {
                 PhoneNumber = phoneNumber,
-                Ciudad = ciudad
+                // Ciudad = ciudad
             };
         }
 

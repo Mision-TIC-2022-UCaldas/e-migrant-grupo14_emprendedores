@@ -48,6 +48,11 @@ namespace E_Migrant.App.Frontend
 
             app.UseAuthentication();
 
+            // app.UseGoogleAuthentication(IApplicationBuilder, new GoogleOAuth2AuthenticationOptions() {
+            //     ClientId = "",
+            //     ClientSecret = ""
+            // });           
+
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
